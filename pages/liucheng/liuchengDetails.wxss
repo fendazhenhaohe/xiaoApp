@@ -1,0 +1,97 @@
+/* pages/liucheng/liuchengDetails.wxss */
+.baikeTxt{
+  width: 92%;
+  margin: 0 auto;
+   margin-bottom: 30rpx;
+}
+.TxtTitle{
+  font-size: 40rpx;
+  color: #222222;
+  font-weight: bold;
+}
+.TxtAbstract{
+  color: #999999;
+  font-size: 32rpx;
+}
+.subnav{
+  color: #222222;
+  font-weight: bold;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  padding-right: 30rpx;
+  margin: 30rpx 0;
+}
+.subnav text{
+  background-color: #3072f6;
+  display: inline-block;
+  width: 6rpx;
+  height: 30rpx;
+  border-radius: 6rpx;
+  margin-right: 15rpx;
+  
+}
+.subTxt{
+  color: #444444;
+  letter-spacing: 2rpx;
+}
+.Recommend{
+  font-size: 40rpx;
+  padding: 40rpx 0;
+  color: #222222;
+  font-weight: bold;
+}
+.RlistTitle{
+   font-size: 32rpx;
+     color: #222222;
+     font-weight: bold;
+}
+.listDate{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #999999;
+
+}
+.Rlist{
+    padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.listDateRight{
+  display: flex;
+  align-items: center;
+}
+.listDateRight image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.line {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f8f8f8;
+ 
+}
+.lFoot{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10rpx;
+}
+.lFoot view{
+  width: 45%;
+  box-sizing: border-box;
+  height: 90rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 4rpx solid #3072f6;
+  border-radius: 10rpx;
+  font-weight: bold;
+}
+.lFoot view:first-child{
+  color: #3072f6;
+}
+.lFoot view:nth-child(2){
+  background-color: #3072f6;
+  color: #fff;
+}

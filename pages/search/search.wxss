@@ -1,0 +1,92 @@
+/* pages/search/search.wxss */
+.search{
+  border: 1rpx solid #cccccc;
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+}
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.search input{
+  height: 100%;
+  width: 80%;
+}
+.Title{
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 0;
+}
+.TitleLeft{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.TitleRight{
+  font-size: 28rpx;
+  color: #a7a7a7;
+}
+.moudle{
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.moudle view{
+  width: 100px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #f8f8f8;
+  color: #222222;
+  font-size: 28rpx;
+  margin-right: 15rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+/* 列表 */
+.liebiao{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #e4e6f0;
+  padding: 30rpx 0;
+}
+.liebiaoLeft{
+  display: flex;
+  align-items: center;
+}
+.liebiaoRight{
+  color: #fa5741;
+  font-weight: bold;
+}
+.loupanTips{
+  display: flex;
+  flex-direction: column;
+}
+.loupanName{
+  background-color: #edf0f3;
+  font-size: 28rpx;
+  color: #9399a5;
+  padding: 1rpx 10rpx;
+  margin-right: 15rpx;
+}
+.loupanTips text:first-child{
+  color: #101d37;
+  font-size: 32rpx;
+}
+.loupanTips text:nth-child(2){
+  color: #6b7072;
+  font-size: 28rpx;
+}

@@ -1,0 +1,342 @@
+/* pages/helpFind/helpFind.wxss */
+
+.top {
+  width: 100%;
+  height: 411rpx;
+  background-size: cover;
+  position: relative;
+}
+
+.topBottom {
+  width: 100%;
+  height: 90rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.topBottom view {
+  width: 50%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.addWhite {
+  color: #fff;
+}
+
+.topTxt {
+  display: flex;
+  flex-direction: column;
+  font-size: 50rpx;
+  font-weight: bold;
+  padding-top: 100rpx;
+  padding-left: 30rpx;
+}
+
+.main {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainTitle {
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 40rpx 0;
+}
+
+/* 滑块 */
+
+.sliderView {
+  position: relative;
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  width: 100%;
+}
+
+.right {
+  position: absolute;
+  width: 100%;
+}
+
+.zy-slider {
+  position: relative;
+  text-align: center;
+}
+
+/* 预算 */
+
+.des {
+  text-align: center;
+  font-size: 42rpx;
+  color: #3072f6;
+  font-weight: bold;
+}
+
+.mainBottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 28rpx;
+}
+
+/* 总价 */
+
+.zongjia {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.box {
+  margin-top: 30rpx;
+}
+
+.boxTxt {
+  display: inline-block;
+  width: 140rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #f8f8f9;
+  color: #222;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+  border: 2rpx solid #f8f8f9;
+}
+
+.zjTxt {
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-weight: 28rpx;
+}
+
+.zjTxt image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.zjTxt text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #3072f6;
+}
+
+.boxTxtActive {
+  border: 2rpx solid #222;
+  border-radius: 5rpx;
+  background-color: #fff;
+}
+
+.zjBottom {
+  background-color: #f8f8f9;
+  padding: 20rpx 40rpx;
+  color: #9399a5;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+
+/* 购买偏好 */
+
+.tag {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.tagTitle {
+  font-size: 36rpx;
+  color: #222;
+  font-weight: bold;
+  padding: 40rpx 0 10rpx 0;
+}
+
+/* 地址选择 */
+
+.addressTop {
+  display: flex;
+  height: 90rpx;
+  background-color: #f8f8f9;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5rpx;
+  padding: 0 20rpx;
+}
+.addressTop image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.addressTop>view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 下拉框 */
+
+.addressSelect {
+  border: 1rpx solid #f8f8f9;
+}
+
+.selectTop {
+  display: flex;
+}
+
+.one {
+  display: flex;
+  height: 500rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #f8f8f9;
+}
+
+.quyu-right image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.one>view {
+  width: 33.3%;
+}
+
+.quyu-right>view {
+  display: flex;
+}
+
+.qy>view {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #101d37;
+}
+
+.form-btn {
+  width: 100%;
+  /* display: flex; */
+  height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #9399a5;
+  padding-bottom: 5rpx;
+}
+
+.btnTitle {
+  font-size: 28rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+
+.btnFoot {
+  display: flex;
+  justify-content: space-between;
+  margin: 15rpx 30rpx;
+}
+
+.btn-reset {
+  background-color: #f8f8f9;
+}
+
+.btn-submit {
+  background-color: #3072f6;
+  color: #fff;
+}
+
+.quyu-left>view {
+  box-sizing: border-box;
+  padding-left: 50rpx;
+}
+
+.quyu-center {
+  overflow-y: scroll;
+}
+
+.quyu-right {
+  overflow-y: scroll;
+}
+
+.current {
+  color: #3072f6 !important;
+}
+
+.current2 {
+  color: #3072f6 !important;
+}
+
+.current3 {
+  color: #3072f6;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: red;
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.8;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+  padding: 0;
+  margin: 0;
+}
+.addressTopRight image:first-child{
+  width: 30rpx;
+  height: 30rpx;
+}
+.paddingAdd{
+  padding: 40rpx 0;
+}
+.input{
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #e4e6f0;
+}
+.tishiTop{
+  display: flex;
+  align-items: center;
+}
+.tishiTop image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.tishi{
+  width: 92%;
+  margin: 0 auto;
+}
+.tishiTop{
+  padding-top: 40rpx;
+  font-size: 32rpx;
+  color: #222;
+}
+.tishiTxt{
+  color: #6b7072;
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+.but{
+  width: 92%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  background-color: #3072f6;
+  font-weight: bold;
+  color: #fff;
+  margin: 50rpx auto;
+}

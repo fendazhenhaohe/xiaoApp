@@ -1,0 +1,293 @@
+page {
+  /* font-family: "Monospaced Number,Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif!important"; */
+  font-family: "微软雅黑";
+}
+
+/* 新房列表 */
+
+.newHouse {
+  width: 92%;
+  margin: 0 auto;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #fafafa;
+}
+
+.new {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.newLeft {
+  width: 240rpx;
+  height: 200rpx;
+}
+
+.newLeft image {
+  width: 100%;
+  height: 100%;
+}
+
+.newRight {
+  margin-left: 20rpx;
+  max-width: 400rpx;
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newName {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.newState {
+  background-color: #3072f6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24rpx;
+  padding: 0rpx 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rpx;
+}
+
+.newAddress {
+  font-size: 30rpx;
+  color: #222;
+}
+
+.newTags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.newTags text {
+  display: inline-block;
+  font-size: 28rpx;
+  border: 1px solid #f0f0f0;
+  border-radius: 5rpx;
+  padding: 1rpx 8rpx;
+  margin-right: 10rpx;
+  color: #6b7072;
+}
+
+.newPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newPrice text {
+  color: #fa5741;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.newPrice image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.newHouseInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+}
+
+.infoList {
+  font-size: 26rpx;
+  width: 240rpx;
+  height: 70rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.InfoNull {
+  width: 100%;
+  height: 70rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28rpx;
+  color: #9c9fa1;
+}
+
+.InfoNull image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 15rpx;
+}
+
+/* 旋转样式 */
+
+.inverse {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+/* 底部导航 */
+
+.foot {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  height: 120rpx;
+}
+
+.foot image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.foot view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+}
+
+.foot text {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.footActive {
+  color: #1296db !important;
+}
+
+/* 蒙层 */
+
+.zdy-mask {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  /* display: none; */
+}
+
+.maskView {
+  width: 660rpx;
+  height: 720rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 99999;
+  background-size: 100% 100%;
+  position: fixed;
+  padding: 30rpx 50rpx;
+  box-sizing: border-box;
+}
+.maskTop{
+  width: 100%;
+  position: relative;
+  height: 60rpx;
+}
+.maskTop image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 0px;
+  right: -10rpx;
+}
+.maskTitle{
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #101d37;
+  padding: 20rpx 0 10rpx 0;
+}
+.maskTags{
+  font-size: 28rpx;
+  color: #9399a5;
+  padding: 10rpx 0;
+}
+.maskTips{
+  color: #101d37;
+  font-size: 36rpx;
+  padding: 40rpx 0;
+}
+.maskInput{
+  position: relative;
+}
+.maskInput input{
+  width: 100%;
+  border-bottom: 1rpx solid #ced2d6;
+  height: 90rpx;
+}
+.maskInput image{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 30rpx;
+  z-index: 2
+}
+.maskBut{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #3072f6;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-radius: 10rpx;
+  margin-top: 90rpx;
+}
+/* 免责声明 */
+.infoFoot{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 220rpx;
+}
+.infoFootTop{
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 28rpx;
+  font-weight: bold;
+  padding: 20rpx 0;
+}
+.infoFootTop image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.infoFootTxt{
+  width: 92%;
+  margin: 0 auto;
+   font-size: 28rpx;
+   color: #d6d9dd;
+}

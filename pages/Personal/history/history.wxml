@@ -1,0 +1,80 @@
+<!--pages/Personal/dingyue/dingyue.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">楼盘</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">户型</view>
+
+</view>
+<view class="{{currentTab == 0 ? 'show':'hidden'}}">
+  <block wx:for="{{shuju}}" wx:for-item="item" wx:key>
+    <view class="newHouse">
+      <view class="new">
+        <view class="newLeft">
+          <image src="/img/indexImg/floor.png"></image>
+        </view>
+        <view class="newRight">
+          <view class="newTop">
+            <text class="newName">{{item.name}}</text>
+            <view class="newState">{{item.state}}</view>
+          </view>
+          <view class="newAddress">{{item.address}}</view>
+          <view class="newTags">
+            <block wx:for="{{item.tag}}" wx:for-item="tag1" wx:key>
+              <text>{{tag1}}</text>
+            </block>
+          </view>
+          <view class="newPrice">
+            <text>均价{{item.price}}元/㎡</text>
+            <image data-index="{{item.index}}" class="{{item.change?'inverse':''}}" src="/img/indexImg/turn.png" bindtap="newHouseInfos"></image>
+          </view>
+        </view>
+      </view>
+      <view class="newHouseInfo" hidden="{{item.newHouseInfo}}">
+        <!-- 有户型信息 -->
+        <block wx:for="{{item.info}}" wx:for-item="infos" wx:key>
+          <view class="infoList">
+            {{infos}}
+          </view>
+        </block>
+        <!-- 无户型信息 -->
+        <!-- <view class="InfoNull">
+      <image src="/img/indexImg/gantan.png"></image>
+      暂无户型信息
+    </view> -->
+      </view>
+    </view>
+  </block>
+
+</view>
+<view class="{{currentTab == 1 ? 'show':'hidden'}}">
+  <view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    金沉浮
+     <view class="wrapTitleRight" >
+     均价49520元/㎡
+    </view>
+  </view>
+  <view class="newHouse newHousecc">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">华润理想国</text>
+          <view class="newState">在售</view>
+        </view>
+        <!-- <view class="newAddress">昌平-北七家</view> -->
+        <view class="newTags">
+          <text>住宅</text>
+          <text>住宅</text>
+          <text>住宅</text>
+        </view>
+        <view class="newPrice">
+          <text>约230万/套</text>
+          <view>建面 90-103㎡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

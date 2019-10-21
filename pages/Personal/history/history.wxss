@@ -1,0 +1,126 @@
+/* pages/Personal/history/history.wxss */
+/* pages/Personal/dingyue/dingyue.wxss */
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 92%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.swiper-tab-item{
+    width: 50%; 
+    color:#9399a5;
+}
+.active{
+    color:#101d37;
+    font-size: 18px;
+
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/* 本楼盘详情*/
+
+.wrap {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.wrapBottom {
+  padding-bottom: 50rpx;
+}
+
+.wrapTitle {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapTitleRight {
+  display: flex;
+  font-size: 32rpx;
+  font-weight:bold;
+  color: #fe615a;
+}
+
+.wrapTitleRight image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.hxInfo {
+  display: flex;
+}
+
+.hxInfoLeft {
+  width: 320rpx;
+  height: 180rpx;
+}
+
+.hxInfoLeft image {
+  width: 100%;
+  height: 100%;
+}
+
+.hxInfoRight {
+  width: 370rpx;
+  margin-left: 20rpx;
+}
+
+.hxTop {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.hxInfo text {
+  display: inline-block;
+  font-size: 24rpx;
+  font-weight: normal;
+  background-color: #5f94ff;
+  color: #fff;
+  padding: 1rpx 5rpx;
+  margin-left: 15rpx;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 5rpx;
+}
+
+.hxarea {
+  font-size: 28rpx;
+  color: #a4a7a9;
+  padding: 10rpx 0 10rpx 0;
+}
+.hxPrice{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fe615a;
+}
+.newHousecc{
+  width: 100%;
+}

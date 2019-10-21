@@ -1,0 +1,195 @@
+<view class="top">
+  <scroll-view scroll-x="true" class="topView" enable-flex="true" scroll-with-animation="true">
+    <block wx:for="{{val}}" wx:key="key">
+      <view class="{{cp_index==index? 'viewActive':''}} leftItem" bindtap="changeX" data-id="c_{{item.id}}" data-index="{{item.index}}" id="{{item.id}}" data-id="{{item.id}}">{{item.txt}}
+        <text></text>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<view class="zong">
+  <scroll-view scroll-y="true" style="height:{{height-35}}px" scroll-into-view="{{xbox}}" scroll-with-animation="true" enable-back-to-top="true" bindscroll="bindscroll">
+    <view class="zongMain">
+      <view class="rightItem">
+        <view class="zTitle" id="box1" data-id="0">基础信息</view>
+        <!-- 信息 -->
+        <view class="detail">
+          <view class="detailLeft">楼盘别名</view>
+          <view class="detailRight">金辰府佳苑</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">楼盘特色</view>
+          <view class="detailRight">限竞房，楼盘精选，品牌房企，贴心物业</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">参考均价</view>
+          <view class="detailRight">53000/平</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">参考总价</view>
+          <view class="detailRight">价格待定</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">物业类型</view>
+          <view class="detailRight">住宅</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">建筑类型</view>
+          <view class="detailRight">板楼</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">产权年限</view>
+          <view class="detailRight">70年</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">开&ensp;发&ensp;商</text>
+          </view>
+          <view class="detailRight">buzhida</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">所在区域</view>
+          <view class="detailRight">昌平</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">楼盘地址</view>
+          <view class="detailRight">
+            <text class="addColor">定泗路北七家镇镇府路南</text>
+            <image src="/img/indexImg/right.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="rightItem">
+        <view class="zTitle" id="box2" data-id="1">销售信息</view>
+        <view class="detail">
+          <view class="detailLeft">售卖状态</view>
+          <view class="detailRight">在售</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">售楼地址</view>
+          <view class="detailRight">北七家镇镇政府路南</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">售卖楼栋</view>
+          <view class="detailRight">16栋</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">售卖户型</view>
+          <view class="detailRight">
+            <text class="addColor">4/3居</text>
+            <image src="/img/indexImg/right.png"></image>
+          </view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">最新开盘</view>
+          <view class="detailRight">2019-02-23</view>
+        </view>
+        <!-- 信息 -->
+      </view>
+      <view class="line"></view>
+      <view class="rightItem">
+        <view class="zTitle" id="box3" data-id="2">小区概况</view>
+        <view class="detail">
+          <view class="detailLeft">占地面积</view>
+          <view class="detailRight">67000㎡</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">建筑面积</view>
+          <view class="detailRight">280000㎡</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">容&ensp;积&ensp;率</text>
+          </view>
+          <view class="detailRight">2.5</view>
+        </view>
+
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">绿&ensp;化&ensp;率</text>
+          </view>
+          <view class="detailRight">35%</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">车位配比</view>
+          <view class="detailRight">1:1.3</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">规划楼栋</view>
+          <view class="detailRight">18栋</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">规划户型</view>
+          <view class="detailRight">1771户</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">物业公司</view>
+          <view class="detailRight">北京物业公司</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">物业费用</view>
+          <view class="detailRight">3.8元/㎡/月</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">供暖方式</view>
+          <view class="detailRight">集中供暖</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">供&ensp;&ensp;&ensp;&ensp;水</text>
+          </view>
+          <view class="detailRight">民水</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">供&ensp;&ensp;&ensp;&ensp;电</text>
+          </view>
+          <view class="detailRight">民电</view>
+        </view>
+
+        <!-- 信息 -->
+      </view>
+      <view class="line"></view>
+      <view class="rightItem">
+        <view class="zTitle" id="box4" data-id="3">预售许可证</view>
+        <!-- 信息 -->
+        <view class="detail">
+          <view class="detailLeft">
+            <text decode="{{true}}">预&ensp;售&ensp;证</text>
+          </view>
+          <view class="detailRight">北京物业公司</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">发证时间</view>
+          <view class="detailRight">-</view>
+        </view>
+        <view class="detail">
+          <view class="detailLeft">绑定楼栋</view>
+          <view class="detailRight">-</view>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="infoFoot">
+        <view class="infoFootTop">
+          <image src="/img/info/mianze.png"></image>
+          免责声明
+        </view>
+        <view class="infoFootTxt">
+          免责声明免责声明免责声明免责声明免责声明免责声明免责声明 免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 页面固定底部 -->
+<view class="fixFoot">
+  <view class="footImg">
+    <image src="/img/info/fenxiang.png">
+    </image>
+    分享
+  </view>
+  <view class="footBut">在线咨询</view>
+  <view class="footBut footColor">免费致电</view>
+</view>

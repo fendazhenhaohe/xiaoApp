@@ -1,0 +1,84 @@
+/* pages/quwei/quwei.wxss */
+.locationTop{
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+}
+.locationTop image{
+  width: 100%;
+  height: 100%;
+}
+.locationTop>view{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60rpx;
+  line-height: 60rpx;
+background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+}
+.boxView{
+  width: 92%;
+  margin: 0 auto;
+}
+.boxTitle{
+  font-size: 30rpx;
+  color: #101d37;
+  font-weight: bold;
+  padding: 15rpx 0;
+}
+/* 标签 */
+.tags{
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx 0;
+}
+.tags>view{
+  color: #9399a5;
+}
+.tagsCard{
+  margin: 30rpx 0;
+  background: url('http://video.ychengju.com/11/wx/quwenBg.png');
+  background-size: cover;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  overflow: hidden;
+}
+.tagsCard text{
+  font-size: 32rpx;
+  color: #222;
+}
+.tagsCard{
+  font-size: 32rpx;
+}
+.viewImg{
+  width: 100%;
+  height: 420rpx;
+  position: relative;
+  margin: 30rpx 0;
+}
+.viewImgBig{
+width: 100%;
+height: 100%;
+}
+.viewImgSmall{
+  width: 100rpx;
+  height: 40rpx;
+  position: absolute;
+  left: -10rpx;
+  top: 0;
+}
+.viewTxt{
+  background-color: #f5f8ff;
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}
+.infoFoot{
+  margin-top: 30rpx;
+}

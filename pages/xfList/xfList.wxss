@@ -1,0 +1,527 @@
+/* pages/xfList/xfList.wxss */
+page{
+  overflow-y: true
+}
+.nav {
+  position: relative;
+  z-index: 99;
+  
+  border-bottom: 1rpx solid #fafafa;
+  background: #fff;
+}
+.navTop{
+  width: 100%;
+  display: flex;
+}
+.nav-son {
+  display: flex;
+  /* flex: 1; */
+  text-align: center;
+  height: 80rpx;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  width: 30%;
+}
+.navTags{
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx 0;
+}
+.navTags text{
+  display: inline-block;
+  width: 150rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #f8f8f9;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  color: #101d37;
+}
+
+.content {
+  display: inline-block;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.icon {
+  display: inline-block;
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #666;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.temp {
+  position: relative;
+  z-index: 4;
+  background: #fff;
+}
+
+.temp1 {
+  display: none;
+  width: 100%;
+  max-height: 800rpx;
+  overflow-y: scroll;
+  line-height: 100rpx;
+}
+
+.temp2 {
+  display: none;
+  width: 100%;
+  max-height: 750rpx;
+  overflow-y: scroll;
+  line-height: 100rpx;
+  background: #fff;
+}
+
+.slidedown {
+  transform: translateY(0%);
+}
+
+.temp>view {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.pxTable {
+  border-bottom: 1rpx solid #f4f4f4;
+}
+
+.quyu {
+  position: relative;
+  display: none;
+  height: 800rpx;
+  z-index: 5;
+}
+
+.quyu .qy {
+  overflow-y: scroll;
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #101d37;
+
+  /* border-right: 1rpx solid #f4f4f4; */
+}
+
+.qy view {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 45rpx;
+  /* border-bottom: 1rpx solid #f4f4f4; */
+}
+
+.quyu-left {
+  width: 20% !important;
+  background: #fff;
+}
+
+.quyu-center {
+  background: #f8f8f9;
+  width: 40%  !important;
+}
+
+.quyu-right {
+  background: #f8f8f9;
+   width: 40%  !important;
+}
+
+.quyu-right view {
+  /* border-bottom: 1rpx solid #efefef; */
+  display: flex;
+  align-items: center;
+}
+
+.quyu-right image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-left: 30rpx;
+}
+
+.current {
+
+  color: #3072f6 !important;
+}
+
+.current2 {
+  color: #3072f6 !important;
+}
+
+.current3 {
+  color: #3072f6;
+}
+
+.fullbg {
+  position: fixed;
+  top: 0rpx;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgb(1, 1, 1);
+  transition: all 2s;
+  opacity: 0.5;
+  display: none;
+}
+
+.fullopacity {
+  display: block;
+  animation: fullopacity 0.8s ease-in-out both;
+}
+
+.nav-son.active .content {
+  color: #3072f6;
+  font-weight: bold;
+}
+
+.nav-son.active .icon {
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #1d57a0;
+}
+
+@keyframes slidown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.slidown {
+  display: block;
+  animation: slidown 0.2s ease-in both;
+}
+
+@keyframes slidup {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.slidup {
+  display: block;
+  animation: slidup 0.7s ease-in both;
+}
+
+.disappear {
+  display: none;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: red;
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.8;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+padding: 0;
+margin: 0;
+}
+
+.form-btn {
+  width: 100%;
+  /* display: flex; */
+  height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #9399a5;
+ padding-bottom: 5rpx;
+}
+.btnTitle{
+  font-size: 28rpx;
+   padding-top: 30rpx;
+   padding-left: 30rpx;
+
+}
+.btnFoot{
+  display: flex;
+  justify-content: space-between;
+  margin: 15rpx 30rpx;
+}
+.btn-reset {
+  background-color: #f8f8f9;
+}
+
+.btn-submit {
+  background-color: #3072f6;
+  color: #fff;
+}
+
+.sliderHView {
+  margin: 0 40rpx 0 40rpx;
+  height: 250rpx;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.valueSty {
+  font-size: 30rpx;
+  text-align: center;
+  color: #999;
+  margin-top: 15rpx;
+}
+
+.showMoney text {
+  margin-right: 30rpx;
+}
+
+.twoSlider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentCenter {
+  text-align: center;
+}
+
+.current4 {
+  color: #3072f6 !important;
+}
+
+/* 更多 */
+
+.searchTitle {
+  width: 92%;
+  margin: 0 auto;
+  height: 68rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  line-height: 68rpx;
+  color: #666;
+  text-align: left;
+}
+
+.searchTU {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 18rpx 18rpx;
+  background-color: #fff;
+}
+
+.searchList {
+  /* width: 165rpx;
+  height: 80rpx; */
+  border-radius: 10rpx;
+background-color: #f8f8f9;
+  text-align: center;
+  /* line-height: 80rpx; */
+  font-size: 28rpx;
+padding: 20rpx 30rpx;
+
+  margin-right: 10rpx;
+  margin-bottom: 30rpx;
+  color: #101d37;
+}
+
+.searchList-active {
+background-color: #f0f5ff;
+  color: #3072f6
+}
+
+.searchFoot {
+  width: 100%;
+  /* height: 72rpx; */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1rpx #dcdcdc;
+}
+
+.searchFoot view {
+  /* width: 50%;
+  text-align: center;
+  line-height: 72rpx;
+  color: #000;
+  font-size: 28rpx; */
+}
+
+.sure {
+  color: #ed8c4c !important;
+  border-left: solid 1rpx #dcdcdc;
+}
+
+/* 注释 */
+
+.contain {
+  width: 690rpx;
+  margin: 0 auto;
+}
+
+.pageAll {
+  position: fixed;
+  top: 240px;
+  z-index: 2;
+  width: 100%;
+
+}
+
+.pageAll1 {
+  position: fixed;
+  top: 84.5px;
+  z-index: 2;
+  width: 100%;
+
+}
+
+
+.searchAll {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/* 城市列表 */
+
+.city {
+  position: absolute;
+  left: 4%;
+  top: 28rpx;
+  /* z-index: 100; */
+}
+
+.cityName, .cityList view {
+  height: 90rpx;
+  width: 130rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #efeef3;
+}
+
+.cityList {
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: none;
+}
+
+.cityListnone {
+  display: block;
+  animation: slidown 0.2s ease-in-out both;
+}
+
+/*搜索*/
+
+.search {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search input {
+  width: 92%;
+  margin: 28rpx auto;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 90rpx;
+  border: none;
+  outline: none;
+  font-size: 28rpx;
+  color: #999797;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 0.533rem #ccc;
+}
+
+/*end*/
+.cityName image{
+  width: 40rpx;
+  height: 50rpx;
+}
+/* top */
+.subnav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10rpx 0;
+}
+.subnav image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.subnav view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subnav text{
+  font-size: 30rpx;
+  padding-top: 20rpx;
+}
+/* 新增价格样式 */
+.Price{
+  display: flex;
+  height: 500rpx;
+}
+.Price .quyu-left{
+  width: 33.3%;
+}
+.one{
+  display: flex;
+  background-color: #fff;
+  height: 500rpx;
+  overflow-y: scroll;
+}
+.jiazhong{
+  font-size: 36rpx;
+  color: #101d37;
+
+}
+.nav-son image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.tags{
+  color: #3072f6 !important;
+  background-color: #f0f5ff !important;
+}
+/* 新增滑动 */
+.huadongFix{
+  position: fixed;
+  width: 100%;
+  height: 175rpx;
+  top: 0;
+  left: 0;
+}
+.guding{
+  width: 100%;
+  position: fixed;
+  top: 84.5px;
+  left: 0;
+}
+.fixed{
+  padding-top: 87.5px;
+}

@@ -1,0 +1,125 @@
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.topView{
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  height: 100%;
+}
+.topView view{
+  display: inline-block;
+ width: 25%;
+  height: 100%;
+  line-height: 70rpx;
+  text-align: left;
+}
+.top{
+  width: 92%;
+  margin: 0 auto;
+  height: 70rpx;
+  background-color: #fff;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+.zong{
+  width: 100%;
+  height: 100%;
+}
+.zongMain{
+  width: 100%;
+  margin: 0 auto;
+}
+.zTitle{
+  font-size: 35rpx;
+  color: #101d37;
+  padding: 40rpx 0;
+  font-weight: bold;
+}
+
+.viewActive{
+  color: #101d37;
+  font-weight: bold;
+}
+/* 详细信息 */
+.detail{
+  display: flex;
+  align-items: flex-start;
+  padding: 15rpx 0;
+}
+.detailRight{
+  color: #101d37;
+  margin-left: 30rpx;
+  letter-spacing: 1rpx;
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 500rpx;
+width: 500rpx;
+}
+.detailRight image{
+width: 50rpx;
+height: 50rpx;
+}
+.detailLeft{
+  font-size: 32rpx;
+  color: #9399a5;
+  letter-spacing: 2rpx;
+  width: 140rpx;
+}
+.addColor{
+  color: #3072f6;
+}
+.line {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f8f8f8;
+}
+.rightItem{
+  width: 92%;
+  margin: 0 auto;
+}
+/* 固定底部 */
+.fixFoot{
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #bfbfbf;
+  margin-left: 30rpx;
+}
+.footImg image{
+  width: 50rpx;
+  height: 50rpx
+}
+.footBut{
+  height: 90rpx;
+  width: 240rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #3bc48b;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.footColor{
+  background-color: #3072f6;
+}

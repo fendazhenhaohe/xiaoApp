@@ -1,0 +1,132 @@
+/* pages/liucheng/liucheng.wxss */
+
+.lunboSearch {
+  box-sizing: border-box;
+  width: 90%;
+  height: 90rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.lunboSearch image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+  margin-left: 30rpx;
+}
+
+.lunboSearch>view {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchLeft text {
+  color: #a2a2a2;
+  font-weight: bold;
+}
+
+.searchLeft {
+  border: 2rpx solid #ccc;
+  height: 100%;
+  width: 500rpx;
+  border-radius: 10rpx;
+}
+
+/* 导航 */
+
+.searchNav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.searchNav>view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-top: 20rpx;
+}
+
+.searchNav>view image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.searchNav>view text {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+/* 主要内容 */
+
+.liuMain {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.liuTop {
+  display: flex;
+  margin: 60rpx 0 0rpx 0;
+  border-bottom: 2rpx solid #dddddd;
+  padding-bottom: 40rpx;
+}
+
+.liuTop>view {
+  font-size: 28rpx;
+  color: #222;
+  font-weight: bold;
+  border: 2rpx solid #ccc;
+  width: 140rpx;
+  text-align: center;
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 5rpx;
+  margin-right: 30rpx;
+  position: relative;
+}
+
+.sanjiao {
+  width: 0;
+  height: 0;
+  border-left: 15rpx solid transparent;
+  border-right: 15rpx solid transparent;
+  border-top: 15rpx solid #fa5741;
+  position: absolute;
+  left: 60rpx;
+}
+
+.liuActive {
+  background-color: #fa5741;
+  color: #fff !important;
+    border-radius: 5rpx;
+    border: 2rpx solid #fa5741;
+}
+.yincang{
+  display: none;
+}
+/* 列表页 */
+.liuList{
+border-bottom: 1rpx solid #f2f3f8;
+padding-bottom: 20rpx;
+padding-top: 30rpx;
+}
+.liuTitle{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+.liuDate{
+  color: #999999;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+}

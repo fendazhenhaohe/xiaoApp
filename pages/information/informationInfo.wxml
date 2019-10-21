@@ -1,0 +1,14 @@
+<!--pages/information/informationInfo.wxml-->
+<view class="Fbannder">
+  <view>爱尚家新房资讯</view>
+  <view>让您全面了解新房资讯</view>
+  <view>我要提问</view>
+</view>
+<view class="mationList">
+  <text>摘要:</text> 爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯
+</view>
+<view class="mationList">
+  爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯
+  <image src="/img/indexImg/floor.png"></image>
+爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯爱尚家新房资讯
+</view>

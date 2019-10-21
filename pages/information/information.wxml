@@ -1,0 +1,32 @@
+<!--pages/information/information.wxml-->
+<view class="Fbannder"><view>爱尚家新房资讯</view><view>让您全面了解新房资讯</view><view>我要提问</view></view>
+<view class="mationList">
+  <view class="mationLeft">
+    <image src="/img/indexImg/floor.png" />
+    <view>楼市咨讯</view>
+  </view>
+  <view class="mationRight">
+    <view>杭州东部之星看房请提前预约.可安排车辆接送</view>
+    <view>东部之星目前在售公寓，精装修交付，无装修烦恼。均价19000元/㎡，户型面积58-300平，3.9米层高。低总价，易出租，周边出租群体多。详情请咨询售楼部。</view>
+  </view>
+</view>
+<view class="mationList">
+  <view class="mationLeft">
+    <image src="/img/indexImg/floor.png" />
+    <view>楼市咨讯</view>
+  </view>
+  <view class="mationRight">
+    <view>杭州东部之星看房请提前预约.可安排车辆接送</view>
+    <view>东部之星目前在售公寓，精装修交付，无装修烦恼。均价19000元/㎡，户型面积58-300平，3.9米层高。低总价，易出租，周边出租群体多。详情请咨询售楼部。</view>
+  </view>
+</view>
+<view class="mationList">
+  <view class="mationLeft">
+    <image src="/img/indexImg/floor.png" />
+    <view>楼市咨讯</view>
+  </view>
+  <view class="mationRight">
+    <view>杭州东部之星看房请提前预约.可安排车辆接送</view>
+    <view>东部之星目前在售公寓，精装修交付，无装修烦恼。均价19000元/㎡，户型面积58-300平，3.9米层高。低总价，易出租，周边出租群体多。详情请咨询售楼部。</view>
+  </view>
+</view>

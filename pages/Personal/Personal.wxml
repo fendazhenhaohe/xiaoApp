@@ -1,0 +1,78 @@
+<!--pages/Personal/Personal.wxml-->
+
+<view class="container">
+  <view class="header">
+
+    <view bindtap='setPhotoInfo' class='touxiang'>
+      <image wx:if="{{imgUrl!=null}}" class="userinfo-avatar" src="{{imgUrl}}" background-size="cover"></image>
+      <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="nickname">
+      <view style='font-size:40rpx' bindtap='denglu1'> 15656362015</view>
+      <view class='nickday'>
+        <view>查看个人信息></view>
+      </view>
+    </view>
+  </view>
+  <view class="navPerson">
+    <view class="" bindtap="Todingyue">
+      <image src="/img/person/heng1.png"></image>
+      <text>订阅</text>
+    </view>
+    <view class="" bindtap="Toguanzhu">
+      <image src="/img/person/heng2.png"></image>
+      <text>关注</text>
+    </view>
+    <view class="" bindtap="Toliulan">
+      <image src="/img/person/heng3.png"></image>
+      <text>浏览</text>
+    </view>
+  </view>
+  <view class="lines"></view>
+  <view class="section">
+    <view class="line" bindtap='jianli'>
+      <view class='line-left'>
+        <image src="/img/person/shu1.png" /> 我的交易
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+    <view class="line" bindtap='tdjl'>
+      <view class='line-left'>
+        <image src="/img/person/shu2.png" /> 我的房子
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+    <view class="line" bindtap='tongzhi'>
+      <view class='line-left'>
+        <image src="/img/person/shu3.png" /> 我的优惠券
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+    <view class="line" bindtap='zhiwei'>
+      <view class='line-left'>
+        <image src="/img/person/shu4.png" /> 反馈问题
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+    <view class="line" bindtap='qianbao'>
+      <view class='line-left'>
+        <image src="/img/person/shu5.png" /> 关注服务号
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+
+    <view class="line" bindtap='demo'>
+      <view class='line-left'>
+        <image src="/img/person/shu6.png" /> 客服电话
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+    <view class="line" bindtap='dati'>
+      <view class='line-left'>
+        <image src="/img/person/shu7.png" />关于我们
+      </view>
+      <image class='line-right' src='/img/wback.png'></image>
+    </view>
+
+  </view>
+</view>

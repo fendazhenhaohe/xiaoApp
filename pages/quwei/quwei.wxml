@@ -1,0 +1,55 @@
+<!--pages/quwei/quwei.wxml-->
+<scroll-view scroll-y="true">
+<view  class="boxView" >
+  <view class="box">
+    <view class="boxTitle">文化创意街区 二环沿线楼盘</view>
+    <view class="locationTop">
+      <image src="/img/indexImg/floor.png"></image>
+      <view>文化创意街区</view>
+    </view>
+  </view>
+
+  <view class="tagsCard">
+    <text>整体概况：</text> 还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  </view>
+  <view class="tags">
+    <view>交通</view>
+    <view>医疗</view>
+    <view>商业</view>
+    <view>景观</view>
+  </view>
+  <view class="viewImg">
+  <image class="viewImgBig" src="/img/indexImg/floor.png"></image>
+  <image class="viewImgSmall" src="/img/jintie/tags.png"></image>
+  </view>
+  <view class="viewTxt">
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  </view>
+    <view class="viewImg">
+  <image class="viewImgBig" src="/img/indexImg/floor.png"></image>
+  <image class="viewImgSmall" src="/img/jintie/tags.png"></image>
+  </view>
+  <view class="viewTxt">
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  </view>
+    <view class="viewImg">
+  <image class="viewImgBig" src="/img/indexImg/floor.png"></image>
+  <image class="viewImgSmall" src="/img/jintie/tags.png"></image>
+  </view>
+  <view class="viewTxt">
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  还在到处奔波了解楼盘情况吗？还在到处奔波了解楼盘情况吗？劳神又费力，停止吧！！！现在，你只要
+  </view>
+  </view>
+  <view class="infoFoot">
+  <view class="infoFootTop">
+    <image src="/img/info/mianze.png"></image>
+    免责声明
+  </view>
+  <view class="infoFootTxt">
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明 免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+  </view>
+</view>
+</scroll-view>

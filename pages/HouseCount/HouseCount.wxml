@@ -1,0 +1,284 @@
+<!--pages/HouseCount/HouseCount.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">商业贷款</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">组合贷款</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">公积金贷款</view>
+</view>
+<view class="{{currentTab == 0 ? 'show':'hidden'}}">
+  <!--pages/jianli/gerenxx.wxml-->
+  <view class="section">
+
+    <view class="line">
+      <view class='line-left'>
+        计算方式
+      </view>
+      <view class='line-right'>
+        <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+          <view class='tui-picker-detail'>
+            {{array[index]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <!-- 按房屋总价计算 -->
+    <view hidden="{{allPrice}}">
+    <view class="line">
+      <view class='line-left'>
+        房屋总价
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        贷款比例
+      </view>
+      <view class='line-right'>
+        <picker range="{{array6}}" value="{{index6}}" bindchange="bindPickerChange6">
+          <view class='tui-picker-detail'>
+            {{array6[index6]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    </view>
+    <!-- 按房屋总价计算 end-->
+    <view class="line">
+      <view class='line-left'>
+        商贷金额
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+
+    <view class="line">
+      <view class='line-left'>
+        商贷年限
+      </view>
+      <view class='line-right'>
+        <picker range="{{array1}}" value="{{index1}}" bindchange="bindPickerChange1">
+          <view class='tui-picker-detail'>
+            {{array1[index1]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        商贷利率
+      </view>
+      <view class='line-right'>
+        <picker range="{{array2}}" value="{{index2}}" bindchange="bindPickerChange2">
+          <view class='tui-picker-detail'>
+            {{array2[index2]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    
+    <button bindtap="ToDetail">开始计算</button>
+    <view class="footTxt">以上计算仅供参考,具体金额以实际发生为准</view>
+  </view>
+</view>
+<view class="{{currentTab == 1 ? 'show':'hidden'}}">
+  <view class="section">
+
+    <view class="line">
+      <view class='line-left'>
+        计算方式
+      </view>
+      <view class='line-right'>
+        <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+          <view class='tui-picker-detail'>
+            {{array[index]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <!-- 按房屋总价计算 -->
+    <view hidden="{{allPrice}}">
+    <view class="line">
+      <view class='line-left'>
+        房屋总价
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        贷款比例
+      </view>
+      <view class='line-right'>
+        <picker range="{{array6}}" value="{{index6}}" bindchange="bindPickerChange6">
+          <view class='tui-picker-detail'>
+            {{array6[index6]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    </view>
+    <!-- 按房屋总价计算 end-->
+    <view class="line" style="border:none">
+      <view class='line-left'>
+        贷款总额
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="section">
+    <view class="line">
+      <view class='line-left'>
+        公积金金额
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        公积金年限
+      </view>
+      <view class='line-right'>
+        <picker range="{{array4}}" value="{{index4}}" bindchange="bindPickerChange4">
+          <view class='tui-picker-detail'>
+            {{array4[index4]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <view class="line" style="border:none">
+      <view class='line-left'>
+        公积金利率
+      </view>
+      <view class='line-right'>
+        <picker range="{{array5}}" value="{{index5}}" bindchange="bindPickerChange5">
+          <view class='tui-picker-detail'>
+            {{array5[index5]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="section">
+    <view class="line">
+      <view class='line-left'>
+        商贷金额
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        商贷年限
+      </view>
+      <view class='line-right'>
+        <picker range="{{array1}}" value="{{index1}}" bindchange="bindPickerChange1">
+          <view class='tui-picker-detail'>
+            {{array1[index1]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        商贷利率
+      </view>
+      <view class='line-right'>
+        <picker range="{{array2}}" value="{{index2}}" bindchange="bindPickerChange2">
+          <view class='tui-picker-detail'>
+            {{array2[index2]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <button>开始计算</button>
+    <view class="footTxt">以上计算仅供参考,具体金额以实际发生为准</view>
+  </view>
+</view>
+<view class="{{currentTab == 2 ? 'show':'hidden'}}">
+  <!-- 公积金 -->
+  <view class="section">
+
+    <view class="line">
+      <view class='line-left'>
+        计算方式
+      </view>
+      <view class='line-right'>
+        <picker range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+          <view class='tui-picker-detail'>
+            {{array[index]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+<!-- 按房屋总价计算 -->
+    <view hidden="{{allPrice}}">
+    <view class="line">
+      <view class='line-left'>
+        房屋总价
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    
+    </view>
+    <!-- 按房屋总价计算 end-->
+    <view class="line" style="border:none">
+      <view class='line-left'>
+        公积金金额
+      </view>
+      <view class='line-right'>
+        <input type='number' placeholder="请输入" value='{{name}}' style='padding-right:10rpx'></input>万
+      </view>
+    </view>
+    <view class="line">
+      <view class='line-left'>
+        公积金年限
+      </view>
+      <view class='line-right'>
+        <picker range="{{array4}}" value="{{index4}}" bindchange="bindPickerChange4">
+          <view class='tui-picker-detail'>
+            {{array4[index4]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <view class="line" style="border:none">
+      <view class='line-left'>
+        公积金利率
+      </view>
+      <view class='line-right'>
+        <picker range="{{array5}}" value="{{index5}}" bindchange="bindPickerChange5">
+          <view class='tui-picker-detail'>
+            {{array5[index5]}}
+          </view>
+        </picker>
+        <image src='/img/wback.png'></image>
+      </view>
+    </view>
+    <button>开始计算</button>
+    <view class="footTxt">以上计算仅供参考,具体金额以实际发生为准</view>
+  </view>
+
+</view>

@@ -1,0 +1,130 @@
+/* pages/HouseCount/HouseCount.wxss */
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 92%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#222222;
+    font-weight: bold;
+}
+.active{
+    color:#3072f6;
+    /* border-bottom: 4rpx solid #F65959; */
+    font-size: 18px;
+    font-weight: bold;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+/* 内部 */
+/* pages/jianli/gerenxx.wxss */
+.tui-picker-content{
+  padding: 30rpx;
+  text-align: center;
+}
+.tui-picker-name{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  background-color: #fff;
+  font-size: 32rpx;
+  overflow: hidden;
+  color: #222222;
+width: 400rpx;
+text-align: right;
+      white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.footTxt{
+  text-align: center;
+  font-size: 24rpx;
+  padding-top: 20rpx;
+  color: #cccccc;
+}
+
+
+
+
+
+.section {
+padding:0;
+color:#2e2e2e;
+font-size:30rpx;
+width: 92%;
+margin: 0 auto;
+}
+.section .line{
+    /* padding-left: 30rpx;
+    padding-right: 25rpx; */
+height:110rpx;
+line-height:110rpx;
+border-bottom:1px solid #efefef;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color: #fff;
+}
+.line image{
+    width: 13rpx;
+    height: 22rpx;
+    margin-left: 20rpx
+}
+.line .line-left{
+    color: #222222;
+    font-weight: bold;
+    font-size: 32rpx;
+}
+.line .line-right{
+    display:flex;
+align-items:center;
+
+}
+.line .line-right text{
+   color: #666666;
+}
+.line .line-right input{
+    width: 400rpx;
+    text-align: right;
+    
+    height: 110rpx;
+}
+button{
+   line-height: 90rpx;
+    width: 90%;
+    margin: 0 auto;
+     margin-top: 90rpx;
+    background-color: #3072f7;
+    color: #fff;
+    font-size: 30rpx;
+}
+.line{
+  width: 100%;
+  height: 23rpx;
+  background-color: #f8f8f9;
+}

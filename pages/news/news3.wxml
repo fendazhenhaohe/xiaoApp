@@ -1,0 +1,168 @@
+<!--pages/news/news2.wxml-->
+<view class="news">
+  <view class="historycon">
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="history" bindscrolltoupper="upper" bindscrolltolower="lower">
+      <!-- 历史消息 -->
+      <view>2019.10.02</view>
+      <!-- 打开对话框的消息 -->
+      <view class="chat-news chatRight">
+        <view class='my_right'>
+          <view class="myCard">
+            <image src="/img/indexImg/floor.png"></image>
+            <text class="floorName">望江西路南屏花园望江西路南屏花园</text>
+            <text class="floorInfo">3室内2厅/102㎡/南北</text>
+            <text class="floorPrice">160万</text>
+          </view>
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+         <view class="chat-news chatRight">
+        <view class='my_right'>
+          <view class="myCard">
+            <image src="/img/indexImg/floor.png"></image>
+            <text class="floorName">望江西路南屏花园望江西路南屏花园</text>
+            <text class="floorInfo">3室内2厅/102㎡/南北</text>
+            <text class="floorPrice">160万</text>
+          </view>
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+         <view class="chat-news chatRight">
+        <view class='my_right'>
+          <view class="myCard">
+            <image src="/img/indexImg/floor.png"></image>
+            <text class="floorName">望江西路南屏花园望江西路南屏花园</text>
+            <text class="floorInfo">3室内2厅/102㎡/南北</text>
+            <text class="floorPrice">160万</text>
+          </view>
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+         <view class="chat-news chatRight">
+        <view class='my_right'>
+          <view class="myCard">
+            <image src="/img/indexImg/floor.png"></image>
+            <text class="floorName">望江西路南屏花园望江西路南屏花园</text>
+            <text class="floorInfo">3室内2厅/102㎡/南北</text>
+            <text class="floorPrice">160万</text>
+          </view>
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+         <view class="chat-news chatRight">
+        <view class='my_right'>
+          <view class="myCard">
+            <image src="/img/indexImg/floor.png"></image>
+            <text class="floorName">望江西路南屏花园望江西路南屏花园</text>
+            <text class="floorInfo">3室内2厅/102㎡/南北</text>
+            <text class="floorPrice">160万</text>
+          </view>
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+     
+      <!--自己的消息 -->
+      <view class="chat-news chatRight">
+        <view class='my_right'>
+          <!-- 文字 -->
+          <!-- <view class='new_txt'>内容</view> -->
+          <!-- 语音 -->
+          <view class="new_yuyin">
+            2"
+            <!-- <image class="turn" src="/img/indexImg/yy.png"></image> -->
+            <!-- 播放语音显示的gif -->
+            <image src="/img/indexImg/yy.gif"></image>
+          </view>
+          <!-- 图片 -->
+          <!-- <image class="selectImg" src="/img/indexImg/nav3.png" data-src="{{item.images}}" lazy-load="true" bindtap="previewImg"></image> -->
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+      <view class="chat-news chatRight">
+        <view class='my_right'>
+          <!-- 文字 -->
+          <!-- <view class='new_txt'>内容</view> -->
+          <!-- 语音 -->
+          <view class="new_yuyin">
+            2"
+            <!-- <image class="turn" src="/img/indexImg/yy.png"></image> -->
+            <!-- 播放语音显示的gif -->
+            <image src="/img/indexImg/yy.gif"></image>
+          </view>
+          <!-- 图片 -->
+          <!-- <image class="selectImg" src="/img/indexImg/nav3.png" data-src="{{item.images}}" lazy-load="true" bindtap="previewImg"></image> -->
+        </view>
+        <view style="text-align: right;padding-right: 20rpx;">
+          <image class='new_img' src="/img/indexImg/my.png"></image>
+        </view>
+      </view>
+      <!-- 别人的消息 -->
+      <view class="chat-news chatLeft">
+        <view style="text-align: left;padding-left: 20rpx;">
+          <image class='new_img' src="/img/indexImg/other.png"></image>
+        </view>
+        <view class='you_left'>
+          <!-- 语音 -->
+          <!-- 语音 -->
+          <!-- <view class="new_yuyin yuyinLeft"> -->
+
+          <!-- <image class="turn" src="/img/indexImg/yy.png"></image> -->
+          <!-- 播放语音显示的gif -->
+          <!-- <image class="turn" src="/img/indexImg/yy.gif"></image>
+            2"
+          </view> -->
+          <!-- 文字 -->
+          <!-- <view class='new_txt'>内容</view> -->
+          <!-- 图片 -->
+          <!-- <image class="selectImg" src="/img/indexImg/nav2.png" data-src="/img/indexImg/nav2.png" lazy-load="true" bindtap="previewImg"></image> -->
+          <!-- 其他消息 -->
+          <view class="myCard myCardNews">
+            <text class="floorName" style="margin:0">您是否同意我帮您找房?</text>
+            <view class="floorNews">为方便联络将您的手机号156****2541展示给我,其他经纪人不会看到。</view>
+            <view class="newBottom">
+              <view>同意</view>
+              <view>暂不</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view id="flag"></view>
+
+<!-- 聊天输入 -->
+
+<view class="message">
+
+  <form bindreset="cleanInput" class="sendMessage">
+    <view class="wenben" hidden="{{wenben}}">
+      <image class="addImg" src="/img/indexImg/yuyin.png" bindtap="voliceTotext"></image>
+      <input type="text" confirm-type="send" placeholder="对Ta发送消息..." value="{{massage}}" bindinput='bindChange'></input>
+      <image class="addImg" bindtap='increase' src="/img/indexImg/move.png"></image>
+    </view>
+    <view class="volice" hidden="{{volice}}">
+      <image class="addImg" src="/img/indexImg/jianpan.png" bindtap="textTovolice"></image>
+      <button bindtouchstart="start" bindtouchend="end">按住说话</button>
+      <image class="addImg" bindtap='increase' src="/img/indexImg/move.png"></image>
+    </view>
+  </form>
+  <view class='increased {{aniStyle?"slideup":"slidedown"}}' wx:if="{{increase}}">
+
+    <view class="image" bindtap='chooseImage'>相册 </view>
+
+  </view>
+
+</view>

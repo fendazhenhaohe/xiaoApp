@@ -1,0 +1,63 @@
+<!--pages/HouseCount/HouseCountDetail.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">等额本息</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">等额本金</view>
+
+</view>
+<view class="">
+  <view class="card">
+    <view class="cardMain">
+      <image src="/img/bg.png"></image>
+      <view class="cardTitle">每月应还</view>
+      <view class="cardPrice">
+        <text>5021.2</text>元</view>
+      <!-- 等额本金显示 -->
+      <view class="{{currentTab==1?'show':'hidden'}} yue">
+      首月后每月递减13.00元
+      </view>
+      <view class="cardTags">
+        <view class="tag">
+          <view>贷款总额</view>
+          <view>100万</view>
+        </view>
+        <view class="tag">
+          <view>利息总额</view>
+          <view>102万</view>
+        </view>
+        <view class="tag">
+          <view>贷款年限</view>
+          <view>30年</view>
+        </view>
+      </view>
+    </view>
+    <view class="cardTxt">
+      <view class="cardLine">
+        <text>贷款方式:</text>
+        <text>商业贷款</text>
+      </view>
+      <view class="cardLine">
+        <text>商贷金额:</text>
+        <text>100万</text>
+      </view>
+      <view class="cardLine">
+        <text>商贷年限:</text>
+        <text>30年</text>
+      </view>
+      <view class="cardLine">
+        <text>商贷利率:</text>
+        <text>基准利率(4.9%)</text>
+      </view>
+    </view>
+  </view>
+  <view class="countFoot">
+    <view class="countFootLeft">
+      <text>定制贷款方案</text>
+      <text>咨询金牌经济人</text>
+    </view>
+    <view class="countFootRight">
+      去咨询
+    </view>
+  </view>
+</view>
+<!-- <view class="{{currentTab == 1 ? 'show':'hidden'}}">
+</view> -->

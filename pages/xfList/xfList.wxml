@@ -1,0 +1,199 @@
+<!--pages/xfList/xfList.wxml-->
+<!-- <view class=".page" > -->
+<scroll-view scroll-y bindscroll="bindscroll" style="height:{{height}}px" scroll-top="{{scrollTop}}">
+<!-- <view class="searchAll {{searchAll?'disappear':''}}"> -->
+<view class="searchAll">
+  <view class="search">
+    <view class="city">
+      <view class="cityName" bindtap="cityList">{{cityName}}
+        <view class="icon"></view>
+      </view>
+      <!-- <view class="cityList {{cityList?'cityListnone':''}}">
+        <block wx:for="{{allCity}}" wx:key="i">
+          <view bindtap="getCity" data-id="{{item.cityIndex}}">{{item.cityName}}</view>
+        </block>
+      </view> -->
+    </view>
+    <input type="text" name="" id="" placeholder="输入楼盘名查询" bindinput="change"></input>
+  </view>
+  <view class="subnav">
+    <view>
+      <image src="/img/indexImg/list1.png"></image>
+      <text>最近开盘</text>
+    </view>
+    <view>
+      <image src="/img/indexImg/list2.png"></image>
+      <text>在售楼盘</text>
+    </view>
+    <view>
+      <image src="/img/indexImg/list3.png"></image>
+      <text>优惠特价</text>
+    </view>
+    <view>
+      <image src="/img/indexImg/list4.png"></image>
+      <text>品牌房企</text>
+    </view>
+  </view>
+</view>
+<view class="nav {{huadongFix?'huadongFix':''}}">
+  <view class="navTop">
+    <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <view class="content">区域</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+      <view class="content">价格</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son {{shownavindex == 4? 'active' : ''}}" bindtap="listpxx" data-nav="4">
+      <view class="content">筛选</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3" style="width:10%;">
+      <!-- <view class="content">排序</view>
+    <view class="icon"></view> -->
+      <image src="{{check==true?'/images/select1.png':'/images/select.png'}}"></image>
+    </view>
+  </view>
+  <view class="navTags" >
+    <text class="{{tags==1?'tags':''}}" bindtap="tags" data-tag="1">住宅</text>
+    <text class="{{tags==2?'tags':''}}" bindtap="tags" data-tag="2">品牌房企</text>
+    <text class="{{tags==3?'tags':''}}" bindtap="tags" data-tag="3">小户型</text>
+    <text class="{{tags==4?'tags':''}}" bindtap="tags" data-tag="4">限竞房</text>
+  </view>
+
+</view>
+
+<!-- 地铁区域-》区域、地铁标签 -->
+<view class="quyu guding {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+  <view class="one">
+    <view class="qy quyu-left">
+      <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" wx:key="i" bindtap="selectleft" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-center">
+      <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" wx:key="i" bindtap="selectcenter" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-right">
+      <view wx:for="{{cityright}}" wx:key="i" class="{{select3 == index?'current3':''}}" bindtap='selectright' data-city="{{index}}">
+        <label>{{item}}</label>
+        <image src='/images/selectRight.png' style="{{select3 == index?'display:block':'display:none'}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class='form-btn'>
+    <view class="btnTitle">已选:1号线</view>
+    <view class="btnFoot">
+      <button class='btn-reset' bindtap='quyuEmpty'>不限条件</button>
+      <button class='btn-submit' bindtap='submitFilter'>确定</button>
+    </view>
+
+  </view>
+</view>
+<!-- 价格筛选 -->
+<view class="temp guding temp1 {{nzopen ? 'slidown' : 'slidup'}} {{nzshow ? 'disappear':''}}">
+
+  <view class="Price">
+    <view class="qy quyu-left">
+      <view class="{{select4 == index ? 'current' : ''}}" wx:for="{{priceLeft}}" bindtap="selectleftPrice" data-price='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-center" style="width:80% !important;border-left:1rpx solid #f4f4f4;  overflow-y: scroll;">
+      <view class="jiazhong {{select5==index?'current2':''}}" wx:for="{{pricecenter}}" bindtap="selectcenterPrice" data-index='{{index}}' data-price='{{item}}'>
+        {{item}}
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<!-- 排序筛选 -->
+<view class="temp guding  temp2 contentCenter {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+  <view wx:for="{{content}}" wx:key="i" bindtap='selectPX' data-index="{{index}}" class="pxTable {{pxIndex == index?'current4':''}}">
+    {{item}}
+  </view>
+</view>
+
+<!-- 更多 -->
+
+<view class="temp guding temp3 contentCenter {{pxxopen ? 'slidown' : 'slidup'}} {{pxxshow ? 'disappear':''}}">
+  <view>
+    <scroll-view style="height:400px;" scroll-y>
+      <block wx:for="{{newslist}}" wx:key="i" wx:for-item="dayItem">
+        <view class="searchTitle">
+          {{dayItem.time}}
+        </view>
+        <view class="searchTU">
+          <block wx:for="{{dayItem.list}}" wx:key="i" wx:for-item="item">
+            <view class="searchList {{item.selected==true ? 'searchList-active' : '' }}" bindtap='linkNews' data-num="{{item.num}}" data-index="{{item.index}}">
+              {{item.title}}
+            </view>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+    <view class="searchFoot">
+      <view class="btnFoot" style="width:100%">
+        <button class='btn-reset' bindtap='reastMove'>不限条件</button>
+        <button class='btn-submit' bindtap='sureMove'>确定</button>
+      </view>
+      <!-- <view bindtap="reastMove">重置</view>
+      <view class="sure" bindtap="sureMove">确定</view> -->
+    </view>
+
+  </view>
+</view>
+
+<view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+<!-- <scroll-view scroll-y class="pageAll {{searchAll?'pageAll1':''}}" style="height:{{height-y}}px" scroll-y='{{true}}' bindscrolltolower='scrollToLower' lower-threshold='30'> -->
+<view class="newHouseCard {{fixed?'fixed':''}}">
+  <!-- 新房 -->
+  <block wx:for="{{shuju}}" wx:for-item="item" wx:key>
+    <view class="newHouse" bindtap="ToInfo">
+      <view class="new">
+        <view class="newLeft">
+          <image src="/img/indexImg/floor.png"></image>
+        </view>
+        <view class="newRight">
+          <view class="newTop">
+            <text class="newName">{{item.name}}</text>
+            <view class="newState">{{item.state}}</view>
+          </view>
+          <view class="newAddress">{{item.address}}</view>
+          <view class="newTags">
+            <block wx:for="{{item.tag}}" wx:for-item="tag1" wx:key>
+              <text>{{tag1}}</text>
+            </block>
+          </view>
+          <view class="newPrice">
+            <text>均价{{item.price}}元/㎡</text>
+            <image data-index="{{item.index}}" class="{{item.change?'inverse':''}}" src="/img/indexImg/turn.png" bindtap="newHouseInfos"></image>
+          </view>
+        </view>
+      </view>
+      <view class="newHouseInfo" hidden="{{item.newHouseInfo}}">
+        <!-- 有户型信息 -->
+        <block wx:for="{{item.info}}" wx:for-item="infos" wx:key>
+          <view class="infoList">
+            {{infos}}
+          </view>
+        </block>
+        <!-- 无户型信息 -->
+        <!-- <view class="InfoNull">
+      <image src="/img/indexImg/gantan.png"></image>
+      暂无户型信息
+    </view> -->
+      </view>
+    </view>
+  </block>
+  </view>
+<!-- </scroll-view> -->
+<!-- </view> -->
+</scroll-view>
+<!-- 蒙层 -->
+<view class="zdy-mask" hidden="{{mask}}" bindtap="maskClose"></view>

@@ -1,0 +1,41 @@
+/* pages/Personal/guanzhu/guanzhu.wxss */
+/* pages/Personal/dingyue/dingyue.wxss */
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab{
+    width: 92%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.swiper-tab-item{
+    width: 100%; 
+    color:#9399a5;
+}
+.active{
+    color:#101d37;
+    font-size: 18px;
+
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

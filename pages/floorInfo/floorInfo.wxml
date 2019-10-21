@@ -1,0 +1,421 @@
+<!--pages/floorInfo/floorInfo.wxml-->
+<view class="main">
+  <view class="title">
+    <view class="titleTop">
+      金辰府
+      <text>在售</text>
+    </view>
+    <view class="titleTags">
+      <text>住宅</text>
+      <text>限竞房</text>
+    </view>
+  </view>
+  <view class="banner">
+    <view class="bannerLeft">
+      <image src="/img/indexImg/floor.png"></image>
+    </view>
+    <view class="bannerRight">
+      <view class="bannerRightA">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="bannerRightB" bindtap="move">
+        <image src="/img/indexImg/floor.png"></image>
+        <view>
+          <text>+16</text>
+          <text>查看更多</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 详细信息 -->
+  <view class="info">
+    <view class="infoTitle">
+      <view class="infoTitleLeft">
+        <view>参考价格
+          <text>(均价/总价)</text>
+        </view>
+        <view>53000
+          <text>元</text>/430
+          <text>万起</text>
+        </view>
+      </view>
+      <view class="infoTitleRight">
+        <view>建面</view>
+        <view>89-143
+          <text>㎡</text>
+        </view>
+      </view>
+    </view>
+    <!-- infos -->
+
+    <view class="floorDetail">
+      <!-- 一排两列 -->
+      <view class="floorInfo">
+        <text class="InfoLeft">类型</text>
+        <text class="InfoRight">住宅</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">户型</text>
+        <text class="InfoRight">3/4居</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">结构</text>
+        <text class="InfoRight">板楼</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">开盘</text>
+        <text class="InfoRight">2019.06.23</text>
+      </view>
+      <!-- 一行一列 -->
+      <view class="floorInfo man">
+        <view class="InfoLeft">地址</view>
+        <view class="InfoRight mans">
+          <text>蜀山区蔚蓝商务港</text>
+          <image src="/img/indexImg/right.png"></image>
+        </view>
+      </view>
+      <view class="floorInfo man" bindtap="more">
+        <view class="InfoLeft">更多</view>
+        <view class="InfoRight mans">
+          <text>产权年限、装修标准、开发商产权年限、装修标准、开发商</text>
+          <image src="/img/indexImg/right.png"></image>
+        </view>
+      </view>
+    </view>
+    <!-- 开盘提醒及变价提醒 -->
+    <view class="service">
+      <view class="serviceLine" bindtap="openView" data-title="变价提醒" data-tags="楼盘价格变动时第一时间提醒您" data-tips="订阅变价提醒,不再错过降价哟">
+        <image src="/img/indexImg/bianjia.png"></image>变价提醒我</view>
+      <view bindtap="openView" data-title="开盘提醒" data-tags="开盘前将第一时间提醒您" data-tips="订阅开盘提醒,不再错失好房源">
+        <image src="/img/indexImg/tixing.png"></image>开盘提醒我</view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="wrap">
+  <view class="wrapTitle">
+    优惠信息
+  </view>
+  <view class="allowance">
+    <view class="allowanceLeft">
+      <image src="/img/info/jintieBg.png"></image>
+      <view class="allowanceTxt">
+        <text>30000元</text>
+        <text>可与楼盘优惠叠加使用</text>
+      </view>
+    </view>
+    <view class="allowanceRight">
+      <image src="/img/info/jintieBg.png"></image>
+      <view class="allowanceTxt">
+        <text>30000元</text>
+        <text>可与楼盘优惠叠加使用</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    户型介绍(2)
+  </view>
+  <view class="huxing">
+    <view class="hxTitle">
+      <block wx:for="{{shuju}}">
+        <text class="{{check==item.check?'hxTitleActive':''}}" data-check="{{item.check}}" bindtap="check">{{item.txt}}</text>
+      </block>
+    </view>
+    <view class="hxInfo" bindtap="hxInfo">
+      <view class="hxInfoLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="hxInfoRight">
+        <view class="hxTop">3室2厅1厨1卫
+          <text>在售</text>
+        </view>
+        <view class="hxarea">建面 89㎡</view>
+        <view class="hxBut">一键咨询房贷首付</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<!-- 优选经纪人 -->
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    优选经纪人
+  </view>
+  <view class="agentTips">
+    <view class="">
+      <image src="/img/info/list1.png"></image>全程免费</view>
+    <view class="">
+      <image src="/img/info/list2.png"></image>专业服务</view>
+    <view class="">
+      <image src="/img/info/list3.png"></image>区域解读</view>
+    <view class="">
+      <image src="/img/info/list4.png"></image>户型分析</view>
+  </view>
+  <view class="agentList">
+    <view class="agentListLeft">
+      <image src="/img/indexImg/floor.png"></image>
+      <view class="agentTxt">
+        <view class="agentName">苏打水
+          <text>满意度5分</text>
+        </view>
+        <view class="agentAddress">合肥肥东</view>
+        <view class="agentNum">78人咨询过Ta</view>
+      </view>
+    </view>
+    <view class="agentListRight">
+      <image src="/img/info/tel.png"></image>
+      <image src="/img/info/new.png"></image>
+    </view>
+  </view>
+  <view class="agentList">
+    <view class="agentListLeft">
+      <image src="/img/indexImg/floor.png"></image>
+      <view class="agentTxt">
+        <view class="agentName">苏打水
+          <text>满意度5分</text>
+        </view>
+        <view class="agentAddress">合肥肥东</view>
+        <view class="agentNum">78人咨询过Ta</view>
+      </view>
+    </view>
+    <view class="agentListRight">
+      <image src="/img/info/tel.png"></image>
+      <image src="/img/info/new.png"></image>
+    </view>
+  </view>
+  <view class="agentList">
+    <view class="agentListLeft">
+      <image src="/img/indexImg/floor.png"></image>
+      <view class="agentTxt">
+        <view class="agentName">苏打水
+          <text>满意度5分</text>
+        </view>
+        <view class="agentAddress">合肥肥东</view>
+        <view class="agentNum">78人咨询过Ta</view>
+      </view>
+    </view>
+    <view class="agentListRight">
+      <image src="/img/info/tel.png"></image>
+      <image src="/img/info/new.png"></image>
+    </view>
+  </view>
+  <view class="agentList">
+    <view class="agentListLeft">
+      <image src="/img/indexImg/floor.png"></image>
+      <view class="agentTxt">
+        <view class="agentName">苏打水
+          <text>满意度5分</text>
+        </view>
+        <view class="agentAddress">合肥肥东</view>
+        <view class="agentNum">78人咨询过Ta</view>
+      </view>
+    </view>
+    <view class="agentListRight">
+      <image src="/img/info/tel.png"></image>
+      <image src="/img/info/new.png"></image>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    <view>楼盘动态(3)</view>
+    <view class="wrapTitleRight" bindtap="dynamic">查看全部
+      <image src="/img/indexImg/right.png"></image>
+    </view>
+  </view>
+  <view class="floorNews">
+    <view class="floorNewsTop">
+      <text>销控信息(3)</text>
+    </view>
+    <view class="floorNewsTitle">金辰府均价53000元/㎡起</view>
+    <view class="floorNewsTxt">金辰府均价53000元金辰府均价53000元金辰府均价53000元金辰府均价53000元金辰府均价53000元金辰府均价53000元金辰府均价53000元金辰府均价53000元</view>
+    <view class="floorNewsData">2019年08月21日</view>
+    <view class="floorNewsBut" bindtap="openView" data-title="楼盘动态提醒" data-tags="楼盘动态更新后第一时间提醒您" data-tips="订阅楼盘动态,最新消息不再错过哟">
+      <image src="/img/info/dingyue.png"></image>
+      订阅销控和动态
+    </view>
+  </view>
+</view>
+<!-- 区位配套 -->
+<view class="line"></view>
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    <view>区位介绍</view>
+  </view>
+  <view class="location">
+    <view class="locationTop">
+      <image src="/img/indexImg/floor.png"></image>
+      <view>文化创意街区</view>
+    </view>
+    <view class="locationBottoms">
+      <view class="locationTxt">合肥金南七里合肥金南七里合肥金南七里合肥金南七里合肥金南七里合肥金南七里合肥金南七里合肥金南七里</view>
+      <view class="locationBottom">
+      <view  class="locationBottomLeft"><text>高清沙盘图</text><text>高清沙盘图</text><text>高清沙盘图</text></view>
+      <view class="locationBottomRight">查看全文</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="maoBox">
+  <view class="wrapTitle maoBoxTitle">
+    位置及周边配套
+  </view>
+  <view class="map">
+    <map id="myMap" style="width: 100%; height: 250px;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location enable-scroll="{{false}}"></map>
+    <view class="mapTxt">
+      <view class="mapTitle">
+        <view class="mapTitleLeft">公交</view>
+        <view class="mapTitleRight">2km内共
+          <text>37</text>个</view>
+      </view>
+      <view class="mapList">
+        <view class="mapListLeft">北七家工业园区北七家工业园区北七家工业园区</view>
+        <view class="mapListRight">
+          <image src="/imG/info/address.png"></image>
+          <text>579m</text>
+        </view>
+      </view>
+      <view class="mapList">
+        <view class="mapListLeft">北七家工业园区北七家工业园区北七家工业园区</view>
+        <view class="mapListRight">
+          <image src="/imG/info/address.png"></image>
+          <text>579m</text>
+        </view>
+      </view>
+      <view class="mapList">
+        <view class="mapListLeft">北七家工业园区北七家工业园区北七家工业园区</view>
+        <view class="mapListRight">
+          <image src="/imG/info/address.png"></image>
+          <text>579m</text>
+        </view>
+      </view>
+    </view>
+    <view class="mapBut">
+      <image src="/img/info/news.png"></image>
+      咨询周边配套及规划
+    </view>
+  </view>
+
+</view>
+<view class="line"></view>
+<view class="wrap">
+  <view class="wrapTitle">
+    猜你喜欢
+  </view>
+  <view class="newHouse">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">华润理想国</text>
+          <view class="newState">在售</view>
+        </view>
+        <view class="newAddress">昌平-北七家</view>
+        <view class="newTags">
+          <text>住宅</text>
+          <text>住宅</text>
+          <text>住宅</text>
+        </view>
+        <view class="newPrice">
+          <text>49520元/㎡</text>
+          <view>建面 90-103㎡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="newHouse">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">华润理想国</text>
+          <view class="newState">在售</view>
+        </view>
+        <view class="newAddress">昌平-北七家</view>
+        <view class="newTags">
+          <text>住宅</text>
+          <text>住宅</text>
+          <text>住宅</text>
+        </view>
+        <view class="newPrice">
+          <text>49520元/㎡</text>
+          <view>建面 90-103㎡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="newHouse">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">华润理想国</text>
+          <view class="newState">在售</view>
+        </view>
+        <view class="newAddress">昌平-北七家</view>
+        <view class="newTags">
+          <text>住宅</text>
+          <text>住宅</text>
+          <text>住宅</text>
+        </view>
+        <view class="newPrice">
+          <text>49520元/㎡</text>
+          <view>建面 90-103㎡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="infoFoot">
+  <view class="infoFootTop">
+    <image src="/img/info/mianze.png"></image>
+    免责声明
+  </view>
+  <view class="infoFootTxt">
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明 免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+  </view>
+</view>
+<!-- 页面固定底部 -->
+<view class="fixFoot">
+  <view class="footImg">
+    <image src="/img/info/guanzhu.png"></image>
+    关注
+  </view>
+  <view class="footImg">
+    <image src="/img/info/fenxiang.png">
+    </image>
+    分享
+  </view>
+  <view class="footBut">在线咨询</view>
+  <view class="footBut footColor">免费致电</view>
+</view>
+<!-- 蒙层 -->
+<view class="zdy-mask" hidden="{{mask}}"></view>
+<!-- 订阅消息弹窗 -->
+<view class="maskView" hidden="{{maskView}}">
+  <view class="maskTop">
+    <image src='/img/info/x.png' bindtap="close"></image>
+  </view>
+  <view class="maskTitle">{{title}}</view>
+  <view class="maskTags">{{tags}}</view>
+  <view class="maskTips">{{tips}}</view>
+  <view class="maskInput">
+    <input type="text" disabled="{{disabled}}" value="{{tel}}" focus="{{focus}}">
+    </input>
+    <image src="/img/info/xx.png" hidden="{{close}}" bindtap="change"></image>
+  </view>
+  <view class="maskBut">
+    确定
+  </view>
+</view>

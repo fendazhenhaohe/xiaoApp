@@ -1,0 +1,330 @@
+/* pages/news/news2.wxss */
+
+page {
+  background-color: #fff;
+  height: 100%;
+}
+
+/* 聊天内容 */
+
+.news {
+  padding-top: 30rpx;
+  text-align: center;
+  /* height:100%; */
+  box-sizing: border-box;
+}
+
+#flag {
+  margin-bottom: 100rpx;
+  height: 30rpx;
+}
+
+.chat-notice {
+  text-align: center;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  color: #666;
+}
+
+.historycon {
+  height: 100%;
+  width: 100%;
+  /* flex-direction: column; */
+  display: flex;
+  border-top: 0px;
+}
+
+/* 聊天 */
+
+.chat-news {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chat-news .my_right {
+  float: right;
+  /* right: 40rpx; */
+  padding: 10rpx 10rpx;
+}
+
+.chat-news .name {
+  margin-right: 10rpx;
+}
+
+.chat-news .you_left {
+  float: left;
+  /* left: 5rpx; */
+  padding: 10rpx 10rpx;
+}
+
+.selectImg {
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 50rpx;
+}
+
+.my_right .selectImg {
+  margin-right: 80rpx;
+}
+
+.new_img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.new_txt {
+  max-width: 300rpx;
+  display: inline-block;
+  border-radius: 6rpx;
+  line-height: 60rpx;
+  background-color: #95d4ff;
+  padding: 5rpx 20rpx;
+  margin: 0 10rpx;
+  margin-left: 50rpx;
+}
+
+.my_right .new_txt {
+  margin-right: 60rpx;
+}
+
+.you {
+  background-color: lightgreen;
+}
+
+.my {
+  border-color: transparent transparent transparent #95d4ff;
+}
+
+.you {
+  border-color: transparent #95d4ff transparent transparent;
+}
+
+.hei {
+  margin-top: 50px;
+  height: 20rpx;
+}
+
+.history {
+  height: 100%;
+
+  padding:0 10rpx;
+  font-size: 14px;
+  line-height: 40px;
+  word-break: break-all;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  z-index: -1;
+}
+
+/* 信息输入区域 */
+
+.message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.sendMessage {
+  display: block;
+  height: 80rpx;
+  padding: 10rpx 10rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  z-index: 3;
+}
+
+.sendMessage input {
+  /* float: left; */
+  width: 520rpx;
+  height: 100%;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  padding: 0 10rpx;
+  font-size: 35rpx;
+  color: #666;
+}
+
+.sendMessage button {
+  /* float: left; */
+  width: 520rpx;
+  height: 100%;
+  line-height: 80rpx;
+  padding: 0 10rpx;
+  font-size: 35rpx;
+  color: #666;
+}
+
+.wenben, .volice {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .sendMessage button {
+  float: right;
+  font-size: 35rpx;
+} */
+
+.increased {
+  width: 100%;
+  /* height: 150rpx; */
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+}
+
+.increased .image {
+  width: 100rpx;
+  height: 100rpx;
+  border: 3rpx solid #ccc;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 35rpx;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.slidedown {
+  animation: slidedown 0.5s linear;
+}
+
+.slideup {
+  animation: slideup 0.5s linear;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* 靠右 */
+
+.chatRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chatLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.myCard {
+  display: flex;
+  flex-direction: column;
+  width: 420rpx;
+  box-shadow: 0px 0px 5px #a3a3a3;
+  border-radius: 5rpx;
+}
+
+.myCard image {
+  width: 100%;
+  height: 250rpx;
+  border-radius: 5rpx 5rpx 0 0;
+}
+
+.myCard text {
+  line-height: 40rpx;
+  text-align: left;
+  margin: 0px 15rpx;
+}
+
+.myCard .floorName {
+  font-size: 32rpx;
+  font-weight: bold;
+  padding-top: 10rpx;
+  font-family: "微软雅黑";
+}
+
+.myCard .floorInfo {
+  font-size: 28rpx;
+  color: #9c9fa1;
+}
+
+.myCard  .floorPrice {
+  color: #f00;
+  font-size: 28rpx;
+  padding-bottom: 10rpx;
+}
+
+.addImg {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.floorNews {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 30rpx;
+  text-align: left;
+  padding: 10rpx 0;
+}
+
+.myCardNews {
+  box-sizing: border-box;
+  padding: 15rpx;
+}
+
+/* 右边语音 */
+
+.new_yuyin {
+  max-width: 300rpx;
+  border-radius: 6rpx;
+  line-height: 60rpx;
+  background-color: #95d4ff;
+  padding: 5rpx 20rpx;
+  margin: 0 10rpx;
+  margin-left: 50rpx;
+  margin-right: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_yuyin image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 15rpx;
+}
+
+.turn {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.yuyinLeft image {
+  margin-left: 0;
+  margin-right: 15rpx;
+}
+.newBottom{
+  display: flex;
+  justify-content: space-between;
+}
+.newBottom view{
+  width: 50%;
+}

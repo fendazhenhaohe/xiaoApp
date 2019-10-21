@@ -1,0 +1,36 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <image src="/img/indexImg/sousuo.png"></image>
+  <input type="text" placeholder="请输入小区或者商圈名" focus="{{focus}}" bindconfirm="bindconfirm" bindinput="bindinput"></input>
+  <image src="/img/info/xx.png" hidden="{{clearImg}}"></image>
+</view>
+<view class="Title" hidden="{{Title}}">
+  <view class="TitleLeft">搜索历史</view>
+  <view class="TitleRight" bindtap="clearTags">清空</view>
+</view>
+<view class="moudle">
+  <view class="list" wx:for="{{sousuo}}" data-index="{{index}}" bindtap="select">{{item}}</view>
+
+</view>
+<view class="mainSearch" hidden="{{mainSearch}}">
+  <view class="liebiao">
+    <view class="liebiaoLeft">
+      <view class="loupanName">楼盘</view>
+      <view class="loupanTips">
+        <text>徽创君泊</text>
+        <text>住宅 蜀山 新产业园</text>
+      </view>
+    </view>
+    <view class="liebiaoRight">16888元/㎡</view>
+  </view>
+  <view class="liebiao">
+    <view class="liebiaoLeft">
+      <view class="loupanName">楼盘</view>
+      <view class="loupanTips">
+        <text>徽创君泊</text>
+        <text>住宅 蜀山 新产业园</text>
+      </view>
+    </view>
+    <view class="liebiaoRight">16888元/㎡</view>
+  </view>
+</view>

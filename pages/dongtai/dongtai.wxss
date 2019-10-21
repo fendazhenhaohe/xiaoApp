@@ -1,0 +1,149 @@
+/* pages/dongtai/dongtai.wxss */
+.line {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f8f8f8;
+}
+.dongtaiTop{
+  width: 92%;
+  margin: 0 auto;
+}
+.dongtaiTop{
+  padding: 30rpx 0;
+}
+.dongtaiTop text{
+  font-size: 28rpx;
+  background-color: #f3f4f5;
+  color: #101d37;
+  padding: 5rpx 30rpx;
+  border-radius: 20rpx;
+  margin-right: 30rpx;
+}
+.hxTitleActive{
+  background-color: #eaf1fe !important;
+  color: #3072f6 !important;
+}
+/* 主体 */
+.dongtai{
+ width: 92%;
+ margin: 0 auto;
+}
+.dongtaiTitle{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  padding: 30rpx 0 30rpx 0;
+}
+.dongtaiTitle image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+.dongtaiTitle text:nth-child(2){
+  color: #9399a5;
+}
+.dongtaiTitle text:nth-child(3){
+  color: #222222
+}
+.dongtaiTime{
+  color: #5680a6;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+/* 主体 */
+.dynamic{
+  display: flex;
+}
+.dynamicLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   width: 20rpx;
+   height: auto;
+}
+.dynamicCircle{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  border: 4rpx solid #3072f6;
+  margin: 15rpx 0rpx;
+ 
+}
+.dynamicLine{
+  height: 100%;
+  width: 2rpx;
+  background-color: #ebebeb;
+}
+.dynamicRight{
+  margin-left: 30rpx;
+}
+.dynamicTitle{
+  font-size: 36rpx;
+  color: #101d37;
+  font-weight: bold;
+  padding-bottom: 15rpx;
+}
+.dynamicTxt{
+  color:#9399a5;
+  font-size: 32rpx;
+}
+/* 弹窗补充 */
+.maskTxt{
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 2rpx;
+  line-height: 45rpx;
+  margin-top: 20rpx;
+}
+.maskView {
+width: 660rpx;
+height: 780rpx;
+}
+/* 暂无更多 */
+.dynamicFoot{
+  background-color: #f8f8f9;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #9399a5;
+}
+/* 固定底部 */
+.fixFoot{
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #bfbfbf;
+  margin-left: 30rpx;
+}
+.footImg image{
+  width: 50rpx;
+  height: 50rpx
+}
+.footBut{
+  height: 90rpx;
+  width: 240rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #3bc48b;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.footColor{
+  background-color: #3072f6;
+}

@@ -1,0 +1,254 @@
+/* pages/hxInfo/hxInfo.wxss */
+page{
+  padding-bottom: 120rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+}
+
+.titleTop {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+}
+
+.titleTop text {
+  display: inline-block;
+  font-size: 24rpx;
+  font-weight: normal;
+  background-color: #5f94ff;
+  color: #fff;
+  padding: 1rpx 5rpx;
+  margin-left: 15rpx;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 5rpx;
+}
+
+
+.titleTags {
+  display: flex;
+  padding: 15rpx 0;
+}
+
+.titleTags text {
+  color: #9399a5;
+  border: 1rpx solid #dddddc;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  padding: 1rpx 8rpx;
+  margin-right: 15rpx;
+}
+/* 详细信息 */
+
+
+/* 楼盘详情 */
+
+.floorDetail {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.floorInfo {
+  min-width: 50%;
+  max-width: 100%;
+  margin-top: 30rpx;
+  width: 50%;
+}
+
+.InfoLeft {
+  font-size: 32rpx;
+  color: #999;
+}
+
+.InfoRight {
+  font-size: 32rpx;
+  color: #333;
+  margin-left: 10rpx;
+}
+
+.man {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.man image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.mans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500rpx;
+}
+
+.mans text {
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 价格 */
+.titlePrice{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fe615a;
+  padding: 15rpx 0;
+}
+.addColor{
+  color: #3072f6;
+}
+.line{
+  height: 20rpx;
+  width: 100%;
+  background-color: #f8f8f9;
+}
+
+/* 本楼盘详情*/
+
+.wrap {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.wrapBottom {
+  padding-bottom: 50rpx;
+}
+
+.wrapTitle {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapTitleRight {
+  display: flex;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #9399a5;
+}
+
+.wrapTitleRight image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.hxInfo {
+  display: flex;
+}
+
+.hxInfoLeft {
+  width: 320rpx;
+  height: 180rpx;
+}
+
+.hxInfoLeft image {
+  width: 100%;
+  height: 100%;
+}
+
+.hxInfoRight {
+  width: 370rpx;
+  margin-left: 20rpx;
+}
+
+.hxTop {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.hxInfo text {
+  display: inline-block;
+  font-size: 24rpx;
+  font-weight: normal;
+  background-color: #5f94ff;
+  color: #fff;
+  padding: 1rpx 5rpx;
+  margin-left: 15rpx;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 5rpx;
+}
+
+.hxarea {
+  font-size: 28rpx;
+  color: #a4a7a9;
+  padding: 10rpx 0 10rpx 0;
+}
+.hxPrice{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fe615a;
+}
+/* 猜你喜欢样式补充 */
+.newPrice>view{
+  color: #9c9fa1;
+  font-size: 28rpx;
+}
+.newHouse{
+  width: 100%;
+}
+.newAddress{
+  color: #9c9fa1;
+}
+/* 固定底部 */
+.fixFoot{
+  width: 100%;
+  height: 120rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #bfbfbf;
+  margin-left: 30rpx;
+}
+.footImg image{
+  width: 50rpx;
+  height: 50rpx
+}
+.footBut{
+  height: 90rpx;
+  width: 240rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #3bc48b;
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.footColor{
+  background-color: #3072f6;
+}

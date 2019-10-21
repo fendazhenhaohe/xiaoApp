@@ -1,0 +1,75 @@
+<!--pages/liucheng/liucheng.wxml-->
+<view class="lunboSearch">
+  <view class="searchLeft">
+    <image src="/img/indexImg/sousuo.png"></image>
+    <text>交易知识搜搜看</text>
+  </view>
+  <view class="searchRight">
+    <image src="/img/indexImg/address.png"></image>
+    <text>合肥</text>
+  </view>
+</view>
+<view class="searchNav">
+  <view class="">
+    <image src="/img/liucheng/nav1.png"></image>
+    <text>购房须知</text>
+  </view>
+  <view class="">
+    <image src="/img/liucheng/nav2.png"></image>
+    <text>二手房</text>
+  </view>
+  <view class="">
+    <image src="/img/liucheng/nav3.png"></image>
+    <text>新房</text>
+  </view>
+  <view class="">
+    <image src="/img/liucheng/nav4.png"></image>
+    <text>海外买房</text>
+  </view>
+  <view class="">
+    <image src="/img/liucheng/nav5.png"></image>
+    <text>卖房</text>
+  </view>
+  <view class="">
+    <image src="/img/liucheng/nav6.png"></image>
+    <text>换房</text>
+  </view>
+</view>
+<view class="liuMain">
+  <view class="liuTop">
+    <view class="{{cindex==1?'liuActive':''}}" data-index="1" bindtap="check">案例解读
+      <view class="sanjiao {{cindex==1?'':'yincang'}}"></view>
+    </view>
+    <view class="{{cindex==2?'liuActive':''}}" data-index="2" bindtap="check">一图读懂
+      <view class="sanjiao {{cindex==2?'':'yincang'}}"></view>
+    </view>
+  </view>
+  <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以案说法以案说法以案说法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以案说法以案说法以案说法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以案说法以案说法以案说法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以案说法以案说法以案说法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+   <view class="liuList">
+    <view class="liuTitle">以案说法以案说法以案说法以案说法以案说法以案说法以案说法以案说法</view>
+    <view class="liuDate">爱尚家交易平台 2019/10/10</view>
+  </view>
+</view>

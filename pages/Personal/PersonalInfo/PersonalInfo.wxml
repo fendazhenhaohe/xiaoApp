@@ -1,0 +1,8 @@
+<!--pages/Personal/PersonalInfo/PersonalInfo.wxml-->
+<view class="line">
+  <view class="lineLeft">手机号</view>
+  <view class="lineRight">156****3601</view>
+</view>
+
+<view class="but">退出登录
+</view>

@@ -1,0 +1,27 @@
+<view class="top">
+<scroll-view scroll-x="true" scroll-left="{{leftTop}}" class="topView" enable-flex="true" scroll-with-animation="true">
+<block wx:for="{{val}}" wx:key="key">
+  <view class="{{cp_index==index? 'viewActive':''}} leftItem" bindtap="changeX" data-id="c_{{item.id}}" data-index="{{item.index}}" id="{{item.id}}" data-id="{{item.id}}">{{item.txt}}<text></text></view>
+</block>
+</scroll-view>
+</view>
+
+<view class="zong">
+<scroll-view scroll-y="true" style="height:{{height-35}}px" scroll-into-view="{{xbox}}" scroll-with-animation="true" enable-back-to-top="true" bindscroll="bindscroll">
+<view class="zongMain">
+<block wx:for="{{val}}" wx:key="key">
+<view class="rightItem">
+<view class="zTitle"  id="{{item.id}}" data-id="{{item.id}}">{{item.txt}}</view>
+<view class="zPhoto">
+<image src="/img/indexImg/floor.png"></image>
+<image src="/img/indexImg/floor.png"></image>
+<image src="/img/indexImg/floor.png"></image>
+<image src="/img/indexImg/floor.png"></image>
+<image src="/img/indexImg/floor.png"></image>
+<image src="/img/indexImg/floor.png"></image>
+</view>
+</view>
+</block>
+</view>
+</scroll-view>
+</view>

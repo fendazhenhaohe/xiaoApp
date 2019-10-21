@@ -1,0 +1,86 @@
+<!--pages/dongtai/dongtai.wxml-->
+<view class="dongtaiTop">
+  <block wx:for="{{shuju}}">
+    <text class="{{check==item.check?'hxTitleActive':''}}" data-check="{{item.check}}" bindtap="check">{{item.txt}}</text>
+  </block>
+</view>
+<view class="line"></view>
+<view class="dongtai">
+  <view class="dongtaiTitle">
+    <image src="/img/info/mianze.png"></image>
+    <text>楼盘资讯</text>
+    <text bindtap="open">免责声明</text>
+    <image src="/img/indexImg/right.png"></image>
+  </view>
+  <view class="dongtaiTime">
+    2019年08月12日
+  </view>
+  <view class="dynamic">
+    <view class="dynamicLeft">
+      <view class="dynamicCircle"></view>
+      <view class="dynamicLine"></view>
+    </view>
+    <view class="dynamicRight">
+      <view class="dynamicTitle">
+        金辰府现均价50000/㎡
+      </view>
+      <view class="dynamicTxt"> 金辰府现均0/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现</view>
+    </view>
+  </view>
+  <view class="dongtaiTime">
+    2019年08月12日
+  </view>
+  <view class="dynamic">
+    <view class="dynamicLeft">
+      <view class="dynamicCircle"></view>
+      <view class="dynamicLine"></view>
+    </view>
+    <view class="dynamicRight">
+      <view class="dynamicTitle">
+        金辰府现均价50000/㎡
+      </view>
+      <view class="dynamicTxt"> 金辰府现均0/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现</view>
+    </view>
+  </view>
+  <view class="dongtaiTime">
+    2019年08月12日
+  </view>
+  <view class="dynamic">
+    <view class="dynamicLeft">
+      <view class="dynamicCircle"></view>
+      <view class="dynamicLine"></view>
+    </view>
+    <view class="dynamicRight">
+      <view class="dynamicTitle">
+        金辰府现均价50000/㎡
+      </view>
+      <view class="dynamicTxt"> 金辰府现均0/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现均价50000/㎡现均价50000/㎡ 金辰府现均价50000/㎡ 金辰府现</view>
+    </view>
+  </view>
+
+</view>
+<view class="dynamicFoot">无更多动态</view>
+
+<!-- 蒙层 -->
+<view class="zdy-mask" hidden="{{mask}}"></view>
+<view class="maskView" hidden="{{maskView}}">
+  <view class="maskTop">
+    <image src='/img/info/x.png' bindtap="close"></image>
+  </view>
+  <view class="maskTitle">免责声明</view>
+  <view class="maskTxt">本页面内容，旨在满足广大用户的信息需求而采集提供，如有异议请及时与我们联系。页面所载内容不代表本网站之观点或意见，仅供用户参考与借鉴，最终以政府网站或开发商实际公示为准。商品房预售须取得《商品房预售许可证》，用户在购房时需慎重查验开发商的证件信息。</view>
+  <view class="maskBut" bindtap="close">
+    我知道了
+  </view>
+</view>
+<!-- 页面固定底部 -->
+<view class="fixFoot">
+
+  <view class="footImg">
+    <image src="/img/info/fenxiang.png">
+    </image>
+    分享
+  </view>
+  <view class="footBut">在线咨询</view>
+  <view class="footBut footColor">免费致电</view>
+</view>

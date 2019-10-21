@@ -1,0 +1,138 @@
+<!--pages/hxInfo/hxInfo.wxml-->
+<view class="head">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:200px;">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image src="/img/indexImg/floor.png"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="main">
+  <view class="title">
+    <view class="titleTop">
+      2室2厅1厨1卫
+      <text>在售</text>
+    </view>
+    <view class="titlePrice">约280万/套</view>
+    <view class="titleTags">
+      <text>住宅</text>
+      <text>限竞房</text>
+    </view>
+  </view>
+
+  <!-- 详细信息 -->
+  <view class="info">
+    <!-- infos -->
+    <view class="floorDetail">
+      <!-- 一排两列 -->
+      <view class="floorInfo">
+        <text class="InfoLeft">面积：</text>
+        <text class="InfoRight">建面110㎡</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">物业类型：</text>
+        <text class="InfoRight">住宅</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">朝向：</text>
+        <text class="InfoRight">南</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">户型机构：</text>
+        <text class="InfoRight">平层</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">最早开盘：</text>
+        <text class="InfoRight">暂无数据</text>
+      </view>
+      <view class="floorInfo">
+        <text class="InfoLeft">最早交房：</text>
+        <text class="InfoRight">暂无数据</text>
+      </view>
+      <!-- 一行一列 -->
+      <view class="floorInfo man">
+        <view class="InfoLeft">所属楼盘：</view>
+        <view class="InfoRight mans">
+          <text>蜀山区蔚蓝商务港</text>
+          <image src="/img/indexImg/right.png"></image>
+        </view>
+      </view>
+      <view class="floorInfo man">
+        <view class="InfoLeft">首付预算：</view>
+        <view class="InfoRight mans">
+          <text class="addColor">一键咨询首付及贷款明细</text>
+          <image src="/img/indexImg/right.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    本楼盘其他户型(2)
+  </view>
+  <view class="hxInfo">
+    <view class="hxInfoLeft">
+      <image src="/img/indexImg/floor.png"></image>
+    </view>
+    <view class="hxInfoRight">
+      <view class="hxTop">3室2厅1厨1卫
+        <text>在售</text>
+      </view>
+      <view class="hxarea">建面 89㎡</view>
+      <view class="hxPrice">约760万/套</view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view class="wrap wrapBottom">
+  <view class="wrapTitle">
+    关注此户型的人还关注(2)
+  </view>
+  <view class="newHouse">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">华润理想国</text>
+          <view class="newState">在售</view>
+        </view>
+        <view class="newAddress">昌平-北七家</view>
+        <view class="newTags">
+          <text>住宅</text>
+          <text>住宅</text>
+          <text>住宅</text>
+        </view>
+        <view class="newPrice">
+          <text>49520元/㎡</text>
+          <view>建面 90-103㎡</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="infoFoot">
+  <view class="infoFootTop">
+    <image src="/img/info/mianze.png"></image>
+    免责声明
+  </view>
+  <view class="infoFootTxt">
+    免责声明免责声明免责声明免责声明免责声明免责声明免责声明 免责声明免责声明免责声明免责声明免责声明免责声明免责声明
+  </view>
+</view>
+<!-- 页面固定底部 -->
+<view class="fixFoot">
+
+  <view class="footImg">
+    <image src="/img/info/fenxiang.png">
+    </image>
+    分享
+  </view>
+  <view class="footBut">在线咨询</view>
+  <view class="footBut footColor">免费致电</view>
+</view>

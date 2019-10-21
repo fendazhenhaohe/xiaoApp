@@ -1,0 +1,192 @@
+<!-- 轮播图 -->
+<view class="lunbo">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots indicator-color="rgba(0,0,0,0.3)" indicator-active-color="#fff">
+    <block wx:for="{{imgUrls}}" wx:key>
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="lunboSearch">
+    <view class="searchLeft">
+      <image src="/img/indexImg/sousuo.png"></image>
+      <text>你想住哪？</text>
+    </view>
+    <view class="searchRight">
+      <image src="/img/indexImg/address.png"></image>
+      <!-- <text>合肥</text> -->
+      <view class="city">
+      <view class="cityName" bindtap="cityList">{{cityName}}
+       
+      </view>
+      <view class="cityList {{cityList?'cityListnone':''}}">
+        <block wx:for="{{allCity}}" wx:key="i">
+          <view bindtap="getCity" data-id="{{item.cityIndex}}">{{item.cityName}}</view>
+        </block>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+<!-- nav导航 -->
+<view class="nav">
+  <view bindtap="Tolist">
+    <image src="/img/indexImg/nav1.png"></image>
+    <text>新房</text>
+  </view>
+  <view>
+    <image src="/img/indexImg/nav2.png"></image>
+    <text>买卖流程</text>
+  </view>
+  <view>
+    <image src="/img/indexImg/nav3.png"></image>
+    <text>买房资讯</text>
+  </view>
+  <view bindtap="ToCount">
+    <image src="/img/indexImg/nav4.png"></image>
+    <text>房贷计算</text>
+  </view>
+</view>
+<!-- 标题条 -->
+<view class="sub">
+  <view class="subLeft">帮我找房</view>
+  <view class="subRight"></view>
+</view>
+<!-- 帮我找房 -->
+<view class="helpFind">
+  <view class="helpFindTxt">
+    <text>全城经纪人为您线上找房</text>
+    <text>定制推荐/急速响应/专属推荐</text>
+    <view>立即找房></view>
+  </view>
+  <image src="/img/indexImg/helpFind.png"></image>
+</view>
+<!-- 标题条  热门好盘-->
+<view class="sub">
+  <view class="subLeft">新房本周热门好盘</view>
+  <view class="subRight">更多在售楼盘></view>
+</view>
+<!-- 热门好盘 -->
+<view class="hotFloor">
+  <view>
+    <view class="hotimg">
+      <image src="/img/indexImg/floor.png"></image>
+      <text>长丰</text>
+    </view>
+    <view class="hotname">徽创君泊</view>
+    <view class="hotarea">94-125㎡</view>
+    <view class="hotprice">11000元/㎡</view>
+  </view>
+  <view>
+    <view class="hotimg">
+      <image src="/img/indexImg/floor.png"></image>
+      <text>长丰</text>
+    </view>
+    <view class="hotname">徽创君泊</view>
+    <view class="hotarea">94-125㎡</view>
+    <view class="hotprice">11000元/㎡</view>
+  </view>
+  <view>
+    <view class="hotimg">
+      <image src="/img/indexImg/floor.png"></image>
+      <text>长丰</text>
+    </view>
+    <view class="hotname">徽创君泊</view>
+    <view class="hotarea">94-125㎡</view>
+    <view class="hotprice">11000元/㎡</view>
+  </view>
+</view>
+<!-- 标题条  我的房子 -->
+<view class="sub">
+  <view class="subLeft">我的房子</view>
+  <view class="subRight"></view>
+</view>
+<!-- 我的房子 -->
+<view class="helpFind">
+  <view class="helpFindTxt helpFindTxt1">
+    <text>添加我的房产</text>
+    <text>随时掌握房产动态</text>
+    <view>去添加></view>
+  </view>
+  <image src="/img/indexImg/maifang.png"></image>
+</view>
+<!-- 标题条  我是业主 -->
+<view class="sub">
+  <view class="subLeft">我是业主</view>
+  <view class="subRight"></view>
+</view>
+<!-- 我是业主 -->
+<view class="owner">
+  <view class="ownerLeft">
+    <view>
+      <text>有房出租</text>
+      <text>全程优质服务</text>
+    </view>
+    <image src="/img/indexImg/owner1.png"></image>
+  </view>
+  <view class="ownerRight">
+    <view>
+      <text>我要卖房</text>
+      <text>全程优质服务</text>
+    </view>
+    <image src="/img/indexImg/owner1.png"></image>
+  </view>
+</view>
+<!-- 标题条  猜你喜欢的新房 -->
+<view class="sub">
+  <view class="subLeft">猜你喜欢的新房</view>
+  <view class="subRight"></view>
+</view>
+<!-- 新房 -->
+<block wx:for="{{shuju}}" wx:for-item="item" wx:key>
+  <view class="newHouse">
+    <view class="new">
+      <view class="newLeft">
+        <image src="/img/indexImg/floor.png"></image>
+      </view>
+      <view class="newRight">
+        <view class="newTop">
+          <text class="newName">{{item.name}}</text>
+          <view class="newState">{{item.state}}</view>
+        </view>
+        <view class="newAddress">{{item.address}}</view>
+        <view class="newTags">
+          <block wx:for="{{item.tag}}" wx:for-item="tag1" wx:key>
+            <text>{{tag1}}</text>
+          </block>
+        </view>
+        <view class="newPrice">
+          <text>均价{{item.price}}元/㎡</text>
+          <image data-index="{{item.index}}" class="{{item.change?'inverse':''}}" src="/img/indexImg/turn.png" bindtap="newHouseInfos"></image>
+        </view>
+      </view>
+    </view>
+    <view class="newHouseInfo" hidden="{{item.newHouseInfo}}">
+      <!-- 有户型信息 -->
+      <block wx:for="{{item.info}}" wx:for-item="infos" wx:key>
+        <view class="infoList">
+          {{infos}}
+        </view>
+      </block>
+      <!-- 无户型信息 -->
+      <!-- <view class="InfoNull">
+      <image src="/img/indexImg/gantan.png"></image>
+      暂无户型信息
+    </view> -->
+    </view>
+  </view>
+</block>
+<view class="foot">
+  <view>
+    <image src="/img/indexImg/footShow1.png"></image>
+    <text class="footActive">首页</text>
+  </view>
+  <view>
+    <image src="/img/indexImg/foot2.png"></image>
+    <text>消息</text>
+  </view>
+  <view bindtap="Tomy">
+    <image src="/img/indexImg/foot3.png"></image>
+    <text>我的</text>
+  </view>
+</view>

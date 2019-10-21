@@ -1,0 +1,56 @@
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.topView{
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  height: 100%;
+}
+.topView view{
+  display: inline-block;
+  padding: 0 60rpx 0 0;
+  height: 100%;
+  line-height: 70rpx;
+  text-align: center;
+}
+.top{
+  width: 92%;
+  margin: 0 auto;
+  height: 70rpx;
+  background-color: #fff;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+.zong{
+  width: 100%;
+  height: 100%;
+}
+.zongMain{
+  width: 92%;
+  margin: 0 auto;
+}
+.zTitle{
+  font-size: 35rpx;
+  color: #9c9fa1;
+  padding: 40rpx 0;
+}
+.zPhoto{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: flex-start;
+}
+.zPhoto image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.viewActive{
+  color: red;
+}

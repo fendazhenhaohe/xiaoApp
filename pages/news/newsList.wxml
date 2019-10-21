@@ -1,0 +1,47 @@
+<!--pages/news/newsList.wxml-->
+<view>
+<navigator url="news3">
+  <view class="newsList">
+    <image src="/img/indexImg/other.png"></image>
+    <view class="list">
+      <view class="listTop">
+        <view>
+          <text>吴凯里</text>
+          <text>御龙湾店</text>
+        </view>
+        <text>11:30</text>
+      </view>
+      <view class="listTxt">文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容</view>
+    </view>
+  </view>
+  </navigator>
+  <view class="newsList">
+    <image src="/img/indexImg/other.png"></image>
+    <view class="list">
+      <view class="listTop">
+        <view>
+          <text>吴凯里</text>
+          <text>御龙湾店</text>
+        </view>
+        <text>11:30</text>
+      </view>
+      <view class="listTxt">文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容</view>
+    </view>
+  </view>
+  <view class="newsList">
+    <image src="/img/indexImg/other.png"></image>
+    <view class="list">
+      <view class="listTop">
+        <view>
+          <text>吴凯里</text>
+          <text>御龙湾店</text>
+        </view>
+        <text>11:30</text>
+      </view>
+      <view class="listTxt">文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容文本内容</view>
+    </view>
+  </view>
+  <view class="bottom">
+  没有更多了
+  </view>
+</view>

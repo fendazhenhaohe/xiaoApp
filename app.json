@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/floorInfo/floorInfo",
+    "pages/floorDetail/floorDetail",
+    "pages/quwei/quwei",
+    "pages/information/informationInfo",
+    "pages/Personal/PersonalInfo/PersonalInfo",
+    "pages/information/information",
+    "pages/index/index",
+    "pages/Personal/Personal",
+    "pages/HouseCount/HouseCount",
+    "pages/helpFind/helpFind",
+    "pages/jintie/jintie",
+    
+    "pages/search/search",
+    "pages/Personal/history/history",
+    "pages/liucheng/liucheng",
+    "pages/liucheng/liuchengDetails",
+    "pages/xfList/xfList",
+    "pages/floorPhoto/floorPhoto",
+    "pages/city/city",
+    "pages/Personal/guanzhu/guanzhu",
+    "pages/Personal/dingyue/dingyue",
+    "pages/HouseCount/HouseCountDetail",
+   
+    "pages/dongtai/dongtai",
+    "pages/hxInfo/hxInfo",
+    "pages/news/news3",
+    "pages/news/news2",
+    "pages/news/newsList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱尚家",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

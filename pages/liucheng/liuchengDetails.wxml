@@ -1,0 +1,110 @@
+<!--pages/liucheng/liuchengDetails.wxml-->
+<view class="baikeTxt">
+  <view class="TxtTitle">
+    以案说法人才落户购房要注意哪些事情？
+  </view>
+  <view class="TxtAbstract">
+    爱尚家
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+  <view class="subnav">
+    <text></text>摘要
+  </view>
+  <view class="subTxt">
+    非本合肥本市户籍想要在合肥买房，除了通过逐月连续缴纳12个月的社保或个税这个途径外，还可以通过人才落户在合肥购买首套房。人才落户购房需要注意哪些事情？
+  </view>
+</view>
+<view class="line"></view>
+<view class="baikeTxt">
+  <view class="Recommend">
+    推荐阅读
+  </view>
+  <view class="Rlist">
+    <view class="RlistTitle">业主篇：未成年人买房，成年后反悔？合同有效吗</view>
+    <view class="listDate">
+      <view class="listDateLeft">爱尚家:2019年10月25日</view>
+      <view class="listDateRight">
+        <image src="/img/liucheng/eyes.png"></image>1542</view>
+    </view>
+  </view>
+  <view class="Rlist">
+    <view class="RlistTitle">业主篇：未成年人买房，成年后反悔？合同有效吗</view>
+    <view class="listDate">
+      <view class="listDateLeft">爱尚家:2019年10月25日</view>
+      <view class="listDateRight">
+        <image src="/img/liucheng/eyes.png"></image>1542</view>
+    </view>
+  </view>
+  <view class="Rlist">
+    <view class="RlistTitle">业主篇：未成年人买房，成年后反悔？合同有效吗</view>
+    <view class="listDate">
+      <view class="listDateLeft">爱尚家:2019年10月25日</view>
+      <view class="listDateRight">
+        <image src="/img/liucheng/eyes.png"></image>1542</view>
+    </view>
+  </view>
+</view>
+<view class="lFoot">
+<view bindtap="more">返回上一页</view>
+<view bindtap="more">了解更多交易知识</view>
+</view>

@@ -1,0 +1,145 @@
+<!--pages/helpFind/helpFind.wxml-->
+<view class="top" style="background-image: url({{imgUrl}});">
+  <view class="topTxt {{currentTab==1?'addWhite':''}}">
+    <text>让我们帮您找到想要</text>
+    <text>的房源吧。</text>
+  </view>
+  <view class="topBottom">
+    <view class="{{currentTab==0?'':''}}" data-current="0" bindtap="clickTab">我要买房</view>
+    <view class="{{currentTab==1?'addWhite':''}}" data-current="1"></view>
+  </view>
+</view>
+<view class="main">
+  <view class="mainTitle">您的首付预算</view>
+  <view class="des">{{low1}}-{{heigh1}}万</view>
+  <view class='sliderView'>
+
+    <view class="zy-slider">
+      <zy-slider id="zy-slider1" minValue="{{low1}}" maxValue="{{heigh1}}" min="20" max="500" blockColor="#3072f6" backgroundColor="#f8f8f9" selectedColor="#3072f6" bind:lowValueChange="lowValueChangeAction1" bind:heighValueChange="heighValueChangeAction1"
+      />
+    </view>
+  </view>
+  <view class="mainBottom">
+    <text>20万</text>
+    <text>500万</text>
+  </view>
+</view>
+<!-- 首套及总价 -->
+<view class="zongjia">
+  <view class="box">
+    <text class="boxTxt {{index==1?'boxTxtActive':''}}" data-index="1" bindtap="clickbox" data-title="首套">首套</text>
+    <text class="boxTxt {{index==2?'boxTxtActive':''}}" data-index="2" bindtap="clickbox" data-title="二套">二套</text>
+  </view>
+  <view class="zjTxt">你可选购购房最高总价约为
+    <text>578万</text>
+    <image src="/img/indexImg/wenhao.png" bindtap="zjBottom"></image>
+  </view>
+  <view class="zjBottom" hidden="{{zjBottom}}">
+    说明:购房总价按照非普通住宅利率计算得出,根据各城市不同会略有差异。
+  </view>
+</view>
+<view class="tag">
+  <view class="tagTitle">您购买的偏好?</view>
+  <view class="box">
+    <text class="boxTxt {{like==1?'boxTxtActive':''}}" data-like="1" bindtap="clicklike" data-title="新房">新房</text>
+    <text class="boxTxt {{like==2?'boxTxtActive':''}}" data-like="2" bindtap="clicklike" data-title="二手房">二手房</text>
+    <text class="boxTxt {{like==3?'boxTxtActive':''}}" data-like="3" bindtap="clicklike" data-title="不限">不限</text>
+  </view>
+</view>
+<view class="tag">
+  <view class="tagTitle">{{titleTag}}</view>
+  <view class="box">
+    <text class="boxTxt {{num==1?'boxTxtActive':''}}" data-num="1" bindtap="clicknum" data-title="一居">1居</text>
+    <text class="boxTxt {{num==2?'boxTxtActive':''}}" data-num="2" bindtap="clicknum" data-title="二居">2居</text>
+    <text class="boxTxt {{num==3?'boxTxtActive':''}}" data-num="3" bindtap="clicknum" data-title="二居">3居</text>
+    <text class="boxTxt {{num==4?'boxTxtActive':''}}" data-num="4" bindtap="clicknum" data-title="二居">4居</text>
+    <text class="boxTxt {{num==5?'boxTxtActive':''}}" data-num="5" bindtap="clicknum" data-title="五居">5居</text>
+        <text class="boxTxt {{num==6?'boxTxtActive':''}}" data-num="6" bindtap="clicknum" data-title="五居+">5居+</text>
+  </view>
+</view>
+
+<view class="tag">
+  <view class="tagTitle paddingAdd">您想买的区域?</view>
+  <view class="address">
+    <view class="addressTop">
+      <view bindtap="openSelect" style="width: 80%;height: 100%;justify-content: flex-start;">
+        <image src="/img/indexImg/add.png"></image>
+        {{quyu}}</view>
+      <view class="addressTopRight">
+        <image src="/img/info/xx.png" hidden="{{clear}}" bindtap="clear"></image>
+        <image src="/img/indexImg/sanjiao.png"></image>
+
+      </view>
+    </view>
+    <view class="addressSelect" hidden="{{selectquyu}}">
+      <view class="quyu guding {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+        <view class="one">
+          <view class="qy quyu-left">
+            <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" wx:key="i" bindtap="selectleft" data-city='{{index}}'>
+              {{index}}
+            </view>
+          </view>
+          <view class="qy quyu-center">
+            <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" wx:key="i" bindtap="selectcenter" data-city='{{index}}'>
+              {{index}}
+            </view>
+          </view>
+          <view class="qy quyu-right">
+            <view wx:for="{{cityright}}" wx:key="i" class="{{select3 == index?'current3':''}}" bindtap='selectright' data-city="{{index}}" data-value="{{item}}">
+              <label>{{item}}</label>
+              <image src='/images/selectRight.png' style="{{select3 == index?'display:block':'display:none'}}"></image>
+            </view>
+          </view>
+        </view>
+        <view class='form-btn'>
+          <view class="btnTitle">已选:{{select1}}{{select2}}{{select33}}</view>
+          <view class="btnFoot">
+            <button class='btn-reset' bindtap='quyuEmpty'>清除</button>
+            <button class='btn-submit' bindtap='submitFilter'>确定</button>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="addressSelect">
+      <view class="selectTop">
+        <view class="selectLeft">
+          <view>{{cityData[0]}}</view>
+          <view>{{cityData[1]}}</view>
+        </view>
+        <view class="selectCenter">
+        <view wx:for="{{cityData[0]}}">{{item}}</view>
+        </view>
+        <view class="selectRight">
+        </view>
+      </view>
+      <view class="selectBottom">
+      <view class="selectBut">
+      <view>清除</view>
+      <view>确定</view>
+      </view>
+      </view>
+    </view> -->
+  </view>
+</view>
+<view class="tag">
+  <view class="tagTitle">特殊要求</view>
+  <view class="box">
+  <block wx:for="{{ask}}">
+    <text class="boxTxt {{item.select==1?'boxTxtActive':''}}" data-index="{{index}}" bindtap="clickask" data-title="{{index}}">{{item.txt}}</text>
+    </block>
+  </view>
+</view>
+<view class="tag">
+  <view class="tagTitle paddingAdd">您的联系方式?</view>
+  <view class="input">
+    156****3601
+  </view>
+</view>
+<view class="tishi">
+  <view class="tishiTop">
+    <image src="/img/indexImg/gantan.png"></image>温馨提示</view>
+  <view class="tishiTxt">提交购房需求后将由永筑及授权的优质服务商提供专业的服务。</view>
+</view>
+<view class="but">
+  提交
+</view>
